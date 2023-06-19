@@ -1,20 +1,48 @@
 # EDM in g2HDM thesis outline
 
-## Motivation (The "why"s)
-- Why g2HDM? What differentiates it from other (similar) models? Why is $\rho_{tt}$ important?
-- Why EDMs? What makes it a relevant point of discussion/parameter of interest?
+## Introduction
+- Motivation
+  - Unanswered questions in HEP
+  - Limitations of the current leading model (SM)
+  - What extra good does g2HDM bring?
+  - EDM as a precision probe of NP
 
 ## The theoretical framework
-- The nitty-gritty of the g2HDM model, its assumptions and parameters
-- The relevant framework required to discuss EDM
-  - One-loop
-  - Two-loop
-  - Quarks and leptons
+### A review of the Standard Model of particle physics
+- How deep should this go?
 
-## Predictions and analysis
-- Lepton EDM (and $g-2$)
-- Quark EDM $\rightarrow$ Neutron and top EDMs
+### g2HDM
+- g2HDM as a natural extension of the SM
+  - What differentiates it from other (similar) models?
+- The Lagrangian and Yukawa structure
+- How various parameters in the theory can contribute to NP
+
+### EDM
+- EDM theory in the context of particle physics
+- The Lagrangian and model-independent approach (Wilson coefficients?)
+- Current status of EDM experiments
+
+## My analyses
+### Lepton EDM
+- How g2HDM contributes to lepton-EDM
+  - One-loop
+  - Two-loop Barr-Zee
+- Results
+  - WIP
+- Summary and analysis of the results
+  - Maybe mention $g-2$ somewhere?
+
+### Quark EDM
+- How g2HDM contributes to lepton-EDM
+  - One-loop
+  - Two-loop Barr-Zee
+  - Weinberg
+- Results
+  - WIP
+- Summary and analysis of the results
 
 ## Conclusion and discussion
-- Precision measurement prospects
-- Collider interplay/prospects
+- Summary of motivation
+- Summary of theoretical framework
+- Summary of the analyses
+- Future prospects
