@@ -28,7 +28,7 @@
   - One-loop
   - Two-loop Barr-Zee
 - Results
-  - WIP
+  - c.f. our 2022 JHEP paper
 - Summary and analysis of the results
   - Maybe mention $g-2$ somewhere?
 
@@ -38,7 +38,7 @@
   - Two-loop Barr-Zee
   - Weinberg
 - Results
-  - WIP
+  - c.f. current CEDM project paper
 - Summary and analysis of the results
 
 ## Conclusion and discussion
