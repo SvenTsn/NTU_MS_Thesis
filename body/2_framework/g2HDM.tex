@@ -1,3 +1,31 @@
 \chapter{The General Two-Higgs Doublet Model}
 \label{ch:g2HDM}
-Something something g2HDM.
+
+Following Gell-Mann's \textit{Totalitaian principle}, as a natural extension to the SM, we can introduce a second Higgs doublet.
+This second doublet couples to all flavors and families of fermions, and has no symmetry requirement imposed upon it.
+Hence, it is referred to as the "General Two Higgs Doublet Model", or {\gthdm} for short.
+
+The {\gthdm} Lagrangian can be written as~\cite{DavidsonHaber05, HouModak21}
+\begin{align}
+  \mathcal{L} = - & \frac{1}{\sqrt{2}} \sum_{f = u, d, \ell} \bar f_{i} \Big[\big(-\lambda^f_i \delta_{ij} s_\gamma + \rho^f_{ij} c_\gamma\big) h
+  + \big(\lambda^f_i \delta_{ij} c_\gamma + \rho^f_{ij} s_\gamma\big)H
+  - i\,{\rm sgn}(Q_f) \rho^f_{ij} A\Big]  R\, f_{j} \nonumber                                                                                     \\
+  -               & \bar{u}_i\left[(V\rho^d)_{ij} R-(\rho^{u\dagger}V)_{ij} L\right]d_j H^+
+  - \bar{\nu}_i\rho^L_{ij} R \, \ell_j H^+ + {\rm h.c.},
+  \label{eq:lagrangian}
+\end{align}
+where the generation indices \(i \), \(j \) are summed over, \(L \), \(R = (1\pm\gamma_{5})/2\) are projections, \(V \) is the CKM matrix for quarks and unity for leptons.
+\(\lambda^f \) are the SM Yukawa matrices, and \(\rho^f \) are the extra-Yukawa matrices.
+A key takeaway is that each family of fermions (u-type, d-type, lepton) is associated with its own extra-Yukawa \(\rho \) matrix.
+In this scenario, flavor-changing neutral Higgs (FCNH) processes are controlled by \textit{flavor hierarchies} and \textit{alignment}.
+Flavor hierarchies means that the \(\rho \) matrices somehow ``know'' the current flavor structure of the SM, represented by the ``rule of thumb''~\cite{HouKumar20}
+\begin{equation}
+  \rho_{ii} \lesssim \order{\lambda_i}, \quad
+  \rho_{1i} \lesssim \order{\lambda_1}, \quad
+  \rho_{3j} \lesssim \order{\lambda_3},
+  \label{eq:ruleofthumb}
+\end{equation}
+with \(j\neq 1 \).
+Alignment means that \(c_{\gamma} \equiv \cos\gamma = \cos(\beta-\alpha)\) is small.
+Consequently, the SM-like Higgs \(h \) is mostly controlled by the SM Yukawas, while the newly introduced \(\rho \) matrices control the exotic Higgses \(H, A, H^{\pm} \).
+A remarkable feature of {\gthdm} is that \(\order{1}\,\rho_{tt}\) can drive EWBG through~\cite{FSH18} \(\lambda_{t}\Im\rho_{tt} \). This feature, however, is immediately put the test in the realm of EDMs.

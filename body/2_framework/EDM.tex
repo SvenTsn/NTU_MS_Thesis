@@ -1,3 +1,32 @@
 \chapter{Electric Dipole Moment}
 \label{ch:EDM}
-Something something EDM.
+
+The effective interaction term that produces EDM \(d_{f} \) for a fermion \(f \) is the dimension-5 operator
+\begin{equation}
+  -\frac{i}{2}d_{f}\left(\bar{f}\sigma^{\mu\nu}\gamma_{5}f\right)F_{\mu\nu}.
+\end{equation}
+
+In {\gthdm}, the first finite contribution to EDM appears at one-loop.
+The dipole operator is chirality violating, so an additional mass insertion is required on the fermion line to obtain the correct chiral structure.
+This means that those one-loop diagrams with lighter leptons in the loop are chirally suppressed.
+The next contribution to this operator is the two-loop Barr-Zee diagram. 
+Naively, one would directly assume these to be loop-suppressed. 
+However, the two-loop diagram having only one chirality flip, compared to three chirality flips for the one-loop diagram, 
+effectively compensates for the loop suppression.
+
+It is straightforward yet tedious to calculate the two-loop Barr-Zee diagrams analytically, but it can be done nonetheless, 
+as seen in the original paper by Barr and Zee~\cite{BarrZee} for neutral scalar contributions with a top quark or gauge boson in the loop,
+as well as later extensions~\cite{MoreBarrZee} to other loop diagrams.
+The final formulae for tha various Barr-Zee diagrams are as follows, following the notations of~\cite{Abe},
+
+\textit{List the formulae here or in an appendix?}
+
+For quarks, they participate in the strong interaction, so there will be QCD-related effects.
+This can be found in two additional terms in the Lagrangian: 
+the chromo-EDM \(\tilde{d}_{f} \) for fermion \(f \), and the Weinberg term \(C_{W} \) for gluon interactions~\cite{Weinberg89}, written as
+\begin{equation}
+  -\frac{i g_{s}}{2}\tilde{d_{f}}\left(\bar{f}\sigma^{\mu\nu}T^{a}\gamma_{5}f\right)G^{a}_{\mu\nu}\quad \qquad \quad -\frac{1}{3}C_Wf^{abc}G^{a}_{\mu\sigma}G^{b,\sigma}_{\nu}\tilde{G}^{c,\mu\nu}
+\end{equation}
+The formulae for calculating the cEDM are
+
+The contribution of the Weinberg diagram can be evaluated using QCD running.
