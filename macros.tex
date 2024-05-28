@@ -26,9 +26,9 @@
 
 \graphicspath{{figures}{example}}
 
-% Algorithm
-\usepackage[lined,ruled,linesnumbered]{algorithm2e}
-\usepackage{algorithmic}
+% % Algorithm
+% \usepackage[lined,ruled,linesnumbered]{algorithm2e}
+% \usepackage{algorithmic}
 
 % Table and list
 \usepackage{booktabs} % Publication quality tables
@@ -43,18 +43,21 @@
 \usepackage{paralist}
 \usepackage{enumitem}
 
-% Math
+% Math and Physics
 \usepackage{bm} % Make bold, italic math symbols
 \usepackage{epsfig} % for figures
 \usepackage{graphicx} % another package that works for figures
+\usepackage{subcaption}
 \usepackage{times}
 %\usepackage{mathptmx}
 \usepackage{mathtools}
 \usepackage{textcomp, gensymb} % math symbol
 \usepackage{amssymb,amsmath,amsfonts} % Short math guide for LaTeX ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf
 \usepackage{siunitx} % SI units
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\cp}[1]{\left[#1\right]_{\times}}
+\usepackage{physics}
+\usepackage{feynmp-auto}
+% \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+% \newcommand{\cp}[1]{\left[#1\right]_{\times}}
 
 % Fonts
 \usepackage{units}
@@ -99,7 +102,7 @@
 \DeclareMathOperator*{\argmin}{\arg\!\min}
 \DeclareMathOperator*{\argmax}{\arg\!\max}
 \DeclareMathOperator{\avg}{avg}
-\DeclareMathOperator{\Tr}{Tr}
+% \DeclareMathOperator{\Tr}{Tr}
 
 % Paragraph
 \let\originalparagraph\paragraph
@@ -165,14 +168,14 @@
 \newcommand{\Ic}{\mathcal{I}_{c}}
 \newcommand{\It}{\mathcal{I}_{t}}
 \newcommand{\Ot}{\mathcal{O}_{t}}
-\newcommand{\asin}{\mathrm{asin}}
-\newcommand{\acos}{\mathrm{acos}}
-\newcommand{\atan}{\mathrm{atan}}
+% \newcommand{\asin}{\mathrm{asin}}
+% \newcommand{\acos}{\mathrm{acos}}
+% \newcommand{\atan}{\mathrm{atan}}
 \newcommand{\atanT}{\mathrm{atan2}}
 \newcommand{\dotP}{\mathrm{dot}}
 
-\newcommand{\gthdm}{\textit{g}2HDM}
-\newcommand{\order}[1]{\mathcal{O}(#1)}
+\newcommand{\gthdm}{G2HDM}
+% \newcommand{\order}[1]{\mathcal{O}(#1)}
 \renewcommand{\Re}{\mathrm{Re}}
 \renewcommand{\Im}{\mathrm{Im}}
 \newcommand{\ecm}{e\,\mathrm{cm}}
