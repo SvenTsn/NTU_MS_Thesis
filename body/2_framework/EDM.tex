@@ -48,7 +48,7 @@ effectively compensates for the loop suppression.
 	\end{fmffile}
 
 	\caption{Two-loop Barr-Zee diagram}
-	\label{fig:barrzee_general}
+	\label{fig:BarrZee_general}
 \end{figure}
 
 It is straightforward yet tedious to calculate the two-loop Barr-Zee diagrams analytically, but it can be done nonetheless, 
@@ -56,39 +56,63 @@ as seen in the original paper by Barr and Zee~\cite{BarrZee} for neutral scalar 
 as well as later extensions~\cite{MoreBarrZee} to other loop diagrams.
 The final formulae for the various Barr-Zee diagrams are as follows, following the notations of~\cite{Abe},
 
-\begin{equation}\label{eq:EDM-neutralScalar-toploop}
-	(d^{\phi G}_{l})_{t} = 
-\end{equation}
+\begin{align}\label{eq:BarrZee-phiG-toploop}
+	(d^{\phi G}_{l})_{t} = -&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}N_{c}Q_{t}(g_{Gll}^{L}+g_{Gll}^{R}) \nonumber \\
+	& \times \left[\frac{g_{\phi ll}^{A}}{m_{l}/v}\frac{g_{\phi tt}^{V}}{m_{t}/v}\mathcal{I}_{1}^{G}(m_{t}, m_{\phi}) + \frac{g_{\phi ll}^{V}}{m_{l}/v}\frac{g_{\phi tt}^{A}}{m_{t}/v}\mathcal{I}_{2}^{G}(m_{t}, m_{\phi})\right]
+\end{align}
+where
+\begin{align}
+	\mathcal{I}_{1}^{G}(m_{t},m_{\phi}) = (g_{Gtt}^{L}+g_{Gtt}^{A})\frac{m_{t}^{2}}{m_{\phi}^{2}-m_{G}^{2}}
+	\left(-2\frac{m_{G}^{2}}{m_{t}^{2}} f\left(\frac{m_{t}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{t}^{2}} f\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right) \nonumber \\
+	\mathcal{I}_{2}^{G}(m_{t},m_{\phi}) = (g_{Gtt}^{L}+g_{Gtt}^{A})\frac{m_{t}^{2}}{m_{\phi}^{2}-m_{G}^{2}}
+	\left(-2\frac{m_{G}^{2}}{m_{t}^{2}} g\left(\frac{m_{t}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{t}^{2}} g\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right)
+\end{align}
 
-\begin{equation}\label{eq:EDM-neutralScalar-Wloop}
-	(d^{\phi G}_{l})_{W} = 
+\begin{equation}\label{eq:BarrZee-phiG-Wloop}
+	(d^{\phi G}_{l})_{W} = +\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(g_{Gll}^{L}+g_{Gll}^{R})\frac{g_{\phi ll}^{A}}{m_{l}/v}\frac{g_{WW\phi}}{2m_{W}^{2}/v}\mathcal{I}_{W}^{G}(m_{\phi})
 \end{equation}
+where
+\begin{align}
+	\mathcal{I}_{W}^{G}(m_{\phi}) = &g_{WWG}\frac{2m_{W}^{2}}{m_{\phi}^{2}-m_{G}^{2}} \nonumber \\
+	& \times \left[-\frac{1}{4}\left\{\left(6-\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \left(1-\frac{m_{G}^{2}}{2m_{W}^{2}}\right)\frac{m_{\phi}^{2}}{m_{W}^{2}}\right\}
+	\left[-2\frac{m_{\phi}^{2}}{m_{W}^{2}} f\left(\frac{m_{W}^{2}}{m_{\phi}^{2}}\right) + 2\frac{m_{G}^{2}}{m_{W}^{2}} f\left(\frac{m_{W}^{2}}{m_{G}^{2}}\right)\right]\right. \nonumber \\
+	&\left. \quad + \left\{\left(-4+\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \frac{1}{4}\left(\left(6-\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \left(1-\frac{m_{G}^{2}}{2m_{W}^{2}}\right)\frac{m_{\phi}^{2}}{m_{W}^{2}}\right)\right\}
+	\left[-2\frac{m_{\phi}^{2}}{m_{W}^{2}} g\left(\frac{m_{W}^{2}}{m_{\phi}^{2}}\right) + 2\frac{m_{G}^{2}}{m_{W}^{2}} g\left(\frac{m_{W}^{2}}{m_{G}^{2}}\right)\right]\right]
+\end{align}
 
-\begin{equation}\label{eq:EDM-neutralScalar-cHloop}
-	(d^{\phi G}_{l})_{H^{+}} = 
+\begin{equation}\label{eq:BarrZee-phiG-cHloop}
+	(d^{\phi G}_{l})_{H^{\pm}} = +\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(g_{Gll}^{L}+g_{Gll}^{R})\frac{g_{\phi ll}^{A}}{m_{l}/v}\frac{g_{\phi H^{+}H^{-}}}{v}\mathcal{I}_{3}^{G}(m_{H^{\pm}}, m_{\phi})
 \end{equation}
+where
+\begin{align}
+	\mathcal{I}_{3}^{G}(m_{H^{\pm}}, m_{\phi}) =& -\frac{1}{2}g_{GH^{+}H^{-}}\frac{v^{2}}{m_{\phi}^{2}-m_{G}^{2}} \nonumber \\
+	& \times \left[\left(-2\frac{m_{G}^{2}}{m_{H^{\pm}}^{2}} f\left(\frac{m_{H^{\pm}}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{H^{\pm}}^{2}} f\left(\frac{m_{H^{\pm}}^{2}}{m_{\phi}^{2}}\right)\right)
+	-\left(-2\frac{m_{G}^{2}}{m_{H^{\pm}}^{2}} g\left(\frac{m_{H^{\pm}}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{H^{\pm}}^{2}} g\left(\frac{m_{H^{\pm}}^{2}}{m_{\phi}^{2}}\right)\right)\right]
+\end{align}
 
-\begin{equation}\label{eq:EDM-chargedScalar-tbloop}
+\begin{equation}\label{eq:BarrZee-cHW-tbloop}
 	(d^{H^{+}W^{+}}_{l})_{t/b} = 
 \end{equation}
 
-\begin{equation}\label{eq:EDM-chargedScalar-Wloop}
+\begin{equation}\label{eq:BarrZee-cHW-Wloop}
 	(d^{H^{+}W^{+}}_{l})_{W} = 
 \end{equation}
 
-\begin{equation}\label{eq:EDM-chargedScalar-cHloop}
+\begin{equation}\label{eq:BarrZee-cHW-cHloop}
 	(d^{H^{+}W^{+}}_{l})_{H^{+}} = 
 \end{equation}
 
 with loop functions
 
-\begin{equation}
-	f(a)= , g(a)=
-\end{equation}
+\begin{align}
+	f(a)= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1-2z(1-z)}{z(1-z)-a}\log{\frac{z(1-z)}{a}} \nonumber \\
+	g(a)= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1}{z(1-z)-a}\log{\frac{z(1-z)}{a}}
+\end{align}
 
-\begin{equation}
-	T(a)= , B(a)=
-\end{equation}
+\begin{align}
+	T(a)= \nonumber \\
+	B(a)=
+\end{align}
 
 For quarks, they participate in the strong interaction, so there will be QCD-related effects.
 This can be found in two additional terms in the Lagrangian: 
@@ -120,7 +144,7 @@ where constants.
 	\centering
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_phiG_t}
+		\begin{fmffile}{BarrZee-phiG-toploop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -151,11 +175,11 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, top loop}
-		\label{fig:barrzee_phiG_t}
+		\label{fig:BarrZee-phiG-toploop}
 	\end{subfigure}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_phiG_W}
+		\begin{fmffile}{BarrZee-phiG-Wloop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -186,11 +210,11 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, \(W \) loop}
-		\label{fig:barrzee_phiG_W}
+		\label{fig:BarrZee-phiG-Wloop}
 	\end{subfigure}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_phiG_Hc}
+		\begin{fmffile}{BarrZee-phiG-cHloop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -221,11 +245,11 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, charged Higgs loop}
-		\label{fig:barrzee_phiG_Hc}
+		\label{fig:BarrZee-phiG-cHloop}
 	\end{subfigure}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_HcW_tb}
+		\begin{fmffile}{BarrZee-cHW-tbloop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -257,11 +281,11 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, top/bottom loop}
-		\label{fig:barrzee_HcW_tb}
+		\label{fig:BarrZee-cHW-tbloop}
 	\end{subfigure}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_HcW_W}
+		\begin{fmffile}{BarrZee_cHW_Wloop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -293,11 +317,11 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, \(W \) loop}
-		\label{fig:barrzee_HcW_W}
+		\label{fig:BarrZee_cHW_Wloop}
 	\end{subfigure}
 	\begin{subfigure}[t]{0.45\textwidth}
 		\centering
-		\begin{fmffile}{Barr-Zee_HcW_Hc}
+		\begin{fmffile}{BarrZee-cHW-cHloop}
 			\begin{fmfgraph*}(180, 120)
 				\fmfleft{i1,i2}
 		   		\fmfright{o1,o2}
@@ -329,8 +353,8 @@ where constants.
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, charged Higgs loop}
-		\label{fig:barrzee_HcW_Hc}
+		\label{fig:BarrZee-cHW-cHloop}
 	\end{subfigure}
 	\caption{Specific Two-loop Barr-Zee diagrams}
-	\label{fig:barrzee_specific}
+	\label{fig:BarrZee-specific}
 \end{figure}
