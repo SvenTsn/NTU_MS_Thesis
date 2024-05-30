@@ -1,4 +1,4 @@
-% BarrZee-phiG-toploop.mp -- do not edit, generated automatically by thesis.tex
+% BarrZee-chromo.mp -- do not edit, generated automatically by thesis.tex
 input feynmp
 require_RCS_revision "1.30";
 beginchar(1, 180*1.0pt#,  120*1.0pt#, 0);
@@ -15,16 +15,16 @@ vconnect ("plain", __v2, __o1);
 vfreeze;
 vpolygon ("phantom,smooth,tension=0.8", __v3, __v4, __v5, __v6);
 vconnect ("dashes", __v1, __v3);
-vconnect ("boson", __v4, __v2);
-vconnect ("photon,tension=1.25", __v5, __o2);
+vconnect ("gluon", __v4, __v2);
+vconnect ("gluon,tension=1.25", __v5, __o2);
 vconnect ("phantom,tension=1.25", __i2, __v6);
 vfreeze;
 vconnect ("plain,right=0.414", __v3, __v4, __v5, __v6, __v3);
 ivertex ("label=$f$,label.angle=60", vloc(__i1));
 ivertex ("label=$f$,label.angle=120", vloc(__o1));
-ivertex ("label=$\gamma $,label.angle=0", vloc(__o2));
+ivertex ("label=$g$,label.angle=0", vloc(__o2));
 idraw ("phantom,label=$\phi =h,,H,,A$,label.side=left", vpath(__v1,__v3));
-idraw ("phantom,label=$G=\gamma ,,Z$,label.side=left", vpath(__v4,__v2));
+idraw ("phantom,label=$g$,label.side=left", vpath(__v4,__v2));
 idraw ("phantom,label=$t$,label.side=left", vpath(__v3,__v4));
 vfreeze;
 vdraw;

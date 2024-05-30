@@ -105,8 +105,8 @@ where
 with loop functions
 
 \begin{align}
-	f(a)= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1-2z(1-z)}{z(1-z)-a}\log{\frac{z(1-z)}{a}} \nonumber \\
-	g(a)= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1}{z(1-z)-a}\log{\frac{z(1-z)}{a}}
+	f(a) &= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1-2z(1-z)}{z(1-z)-a}\log{\frac{z(1-z)}{a}} \nonumber \\
+	g(a) &= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1}{z(1-z)-a}\log{\frac{z(1-z)}{a}}
 \end{align}
 
 \begin{align}
@@ -123,7 +123,9 @@ the chromo-EDM \(\tilde{d}_{f} \) for fermion \(f \), and the Weinberg term \(C_
 The formulae for calculating the cEDM are
 
 \begin{equation}
-	\tilde{d_{f}} = 
+	\tilde{d_{f}} = +\frac{m_{f}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}2g_{s}^{2}\frac{m_{f}^{2}}{m_{\phi}^{2}}
+	\left[\frac{g_{\phi ff}^{A}}{m_{f}/v}\frac{g_{\phi tt}^{V}}{m_{t}/v}\left(-2\frac{m_{\phi}^{2}}{m_{t}^{2}} f\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right) 
+	+ \frac{g_{\phi ff}^{V}}{m_{f}/v}\frac{g_{\phi tt}^{A}}{m_{t}/v}\left(-2\frac{m_{\phi}^{2}}{m_{t}^{2}} g\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right)\right]
 \end{equation}
 
 \begin{equation}
@@ -152,16 +154,17 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{plain,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
 				% \fmf{plain,right}{v4,v5}
 				% \fmf{plain,right}{v5,v6}
 				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{plain,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -171,7 +174,7 @@ where constants.
 				\fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
 				\fmfi{phantom,label=$\phi=h,,H,,A$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$G=\gamma,,Z$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$t$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$t$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, top loop}
@@ -187,16 +190,14 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{boson,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
-				% \fmf{plain,right}{v4,v5}
-				% \fmf{plain,right}{v5,v6}
-				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{boson,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -206,7 +207,7 @@ where constants.
 				\fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
 				\fmfi{phantom,label=$\phi=h,,H,,A$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$G=\gamma,,Z$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$W$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$W$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, \(W \) loop}
@@ -222,16 +223,14 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{dashes,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
-				% \fmf{plain,right}{v4,v5}
-				% \fmf{plain,right}{v5,v6}
-				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{dashes,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -241,7 +240,7 @@ where constants.
 				\fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
 				\fmfi{phantom,label=$\phi=h,,H,,A$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$G=\gamma,,Z$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$H^{\pm}$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Neutral Higgs, charged Higgs loop}
@@ -257,16 +256,14 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{plain,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
-				% \fmf{plain,right}{v4,v5}
-				% \fmf{plain,right}{v5,v6}
-				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{plain,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -277,7 +274,7 @@ where constants.
 				\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$f^{\downarrow\uparrow}$,label.side=left}{vpath(__v1,__v2)}
 				\fmfi{phantom,label=$W^{\pm}$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$t/b$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$t/b$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, top/bottom loop}
@@ -293,16 +290,14 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{boson,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
-				% \fmf{plain,right}{v4,v5}
-				% \fmf{plain,right}{v5,v6}
-				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{boson,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -313,7 +308,7 @@ where constants.
 				\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$f^{\downarrow\uparrow}$,label.side=left}{vpath(__v1,__v2)}
 				\fmfi{phantom,label=$W^{\pm}$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$W$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$W$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, \(W \) loop}
@@ -329,16 +324,14 @@ where constants.
 		   		\fmf{fermion,tension=0.25}{v1,v2}
 		   		\fmf{plain}{v2,o1}
 				\fmffreeze
-				\fmfpoly{dashes,smooth,filled=empty,tension=0.8}{v3,v4,v5,v6}
-				% \fmf{plain,right}{v3,v4}
-				% \fmf{plain,right}{v4,v5}
-				% \fmf{plain,right}{v5,v6}
-				% \fmf{plain,right}{v6,v3}
-				\fmf{scalar}{v1,v3}
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
 				\fmf{boson}{v4,v2}
 				\fmf{photon,tension=1.25}{v5,o2}
 				\fmf{phantom,tension=1.25}{i2,v6}
 				\fmffreeze
+				\fmf{dashes,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
 				% Add our labels
 				% \fmflabel{$f$}{i1}
 				% \fmflabel{$f$}{o1}
@@ -349,7 +342,7 @@ where constants.
 				\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v1,__v3)}
 				\fmfi{phantom,label=$f^{\downarrow\uparrow}$,label.side=left}{vpath(__v1,__v2)}
 				\fmfi{phantom,label=$W^{\pm}$,label.side=left}{vpath(__v4,__v2)}
-				\fmfi{phantom,label=$H^{\pm}$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+				\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v3,__v4)}
 			\end{fmfgraph*}
 		\end{fmffile}
 		\caption{Charged Higgs, charged Higgs loop}
@@ -357,4 +350,68 @@ where constants.
 	\end{subfigure}
 	\caption{Specific Two-loop Barr-Zee diagrams}
 	\label{fig:BarrZee-specific}
+\end{figure}
+\begin{figure}[p]
+	\centering
+	\begin{subfigure}[t]{0.45\textwidth}
+		\centering
+		\begin{fmffile}{BarrZee-chromo}
+			\begin{fmfgraph*}(180, 120)
+				\fmfleft{i1,i2}
+		   		\fmfright{o1,o2}
+		   		\fmf{plain}{i1,v1}
+		   		\fmf{fermion,tension=0.25}{v1,v2}
+		   		\fmf{plain}{v2,o1}
+				\fmffreeze
+				\fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+				\fmf{dashes}{v1,v3}
+				\fmf{gluon}{v4,v2}
+				\fmf{gluon,tension=1.25}{v5,o2}
+				\fmf{phantom,tension=1.25}{i2,v6}
+				\fmffreeze
+				\fmf{plain,right=0.414}{v3,v4,v5,v6,v3}
+				% \fmffreeze
+				% Add our labels
+				% \fmflabel{$f$}{i1}
+				% \fmflabel{$f$}{o1}
+				% \fmflabel{$\gamma$}{o2}
+				\fmfiv{label=$f$,label.angle=60}{vloc(__i1)}
+				\fmfiv{label=$f$,label.angle=120}{vloc(__o1)}
+				\fmfiv{label=$g$,label.angle=0}{vloc(__o2)}
+				\fmfi{phantom,label=$\phi=h,,H,,A$,label.side=left}{vpath(__v1,__v3)}
+				\fmfi{phantom,label=$g$,label.side=left}{vpath(__v4,__v2)}
+				\fmfi{phantom,label=$t$,label.side=left}{vpath(__v3,__v4)}
+			\end{fmfgraph*}
+		\end{fmffile}
+		\caption{Barr-Zee diagram, gluons}
+		\label{fig:BarrZee-chromo}
+	\end{subfigure}
+	\begin{subfigure}[t]{0.45\textwidth}
+		\begin{fmffile}{Weinberg}
+			\begin{fmfgraph*}(180, 120)
+				\fmfleft{i1}
+				\fmfright{o1,o2}
+				\fmf{gluon,tension=1.25}{i1,v1}
+				\fmfpolyn{phantom,smooth,tension=0.8}{v}{8}
+				\fmf{gluon}{v4,o1}
+				\fmf{gluon}{v6,o2}
+				\fmffreeze
+				\fmf{dashes}{v3,v7}
+				\fmfcyclen{plain,right=0.199}{v}{8}
+				% Add our labels
+				\fmfiv{label=$g$,label.angle=60}{vloc(__i1)}
+				\fmfiv{label=$g$,label.angle=60}{vloc(__o1)}
+				\fmfiv{label=$g$,label.angle=-60}{vloc(__o2)}
+				\fmfi{phantom,label=$\phi/H^{\pm}$,label.side=right}{vpath(__v3,__v7)}
+				\fmfiv{label=$t$,label.angle=0}{vloc(__v1)}
+				\fmfiv{label=$t/b$,label.angle=0}{vloc(__v5)}
+				% \fmfi{phantom,label=$t$,label.side=right}{vpath(__v8,__v2)}
+				% \fmfi{phantom,label=$t(b)$,label.side=right}{vpath(__v4,__v6)}
+			\end{fmfgraph*}
+		\end{fmffile}
+		\caption{Weinberg diagram}
+		\label{fig:Weinberg}
+	\end{subfigure}
+	\caption{Diagrams relevant to chromo-EDM}
+	\label{fig:chromo-edm-all}
 \end{figure}
