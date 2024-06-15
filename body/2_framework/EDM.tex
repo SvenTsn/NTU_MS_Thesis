@@ -2,11 +2,71 @@
 \label{ch:EDM}
 
 \section{The electric dipole moment in particle physics}
+Classically, the electric dipole moment of a system is found by 
+\begin{equation}
+	\vb{d} = \int (\vb{r}-\vb{r_{0}})\rho(\vb{r})\dd[3]{\vb{r}}
+\end{equation}
+with \(\vb{r_{0}} \) (check Griffiths/Jackson Multipole expansion).
+Physically, it is inherently a property of composite systems.
+For a system of zero net charge, it is related to the seperation of charges or nonuniformity in the charge distribution;
+for a system of nonzero net charge, it is also related to the difference of the position of the point of reference with respect to the charge in question.
+However, in particle physics, we are not dealing with composite systems, but the \textit{intrinsic} properties of the fundamental particles.
+In the case of \textit{intrinsic} EDM, particle physicists are interested in the EDMs of various fermions.
+Generally speaking, there are two ways to introduce this ``EDM term'', approaching the issue from slightly different angles.
+\subsection{The Dirac method}
+The first method is that of Dirac~\cite{Dirac1928DiracEquation}. 
+In his 1928 paper, which gave birth to the famous Dirac equation, he also wrote down the equation for the electron in an arbitrary electromagnetic field.
+Adapted into more modern notation, it is written as
+\begin{equation}\label{eq:DiracEqwithEMField}
+	\left[-(E-e\phi) + \vb{\alpha}\vdot(\vb{p}-e\vb{A}) + \beta m\right]\psi = 0
+\end{equation}
+where
+\begin{equation}
+	\vb{\alpha} = \left(\right), \quad \quad \beta = 
+\end{equation}
+in the Pauli-Dirac representation.
+By ``squaring'' \eqnref{DiracEqwithEMField} one obtains
+\begin{align}
+	\left[\right]\left[\right]\psi &= 0 \nonumber \\
+	\Longrightarrow \left[\right]\psi &= 0
+\end{align}
+After some matrix algebra, in particular \((\vb{\sigma}\vdot\vb{a})(\vb{\sigma}\vdot\vb{b}) = (\vb{a}\vdot\vb{b})I + i\vb{\sigma}\vdot(\vb{\vb{a}\cross\vb{b}}) \), we arrive at
+\begin{equation}
+	\left[-(E-e\phi)^{2} + (\vb{p}-e\vb{A})^{2} + m^{2} - e\vb{\sigma}\vdot\vb{B} - ie\gamma^{5}\vb{\sigma}\vdot\vb{E}\right]\psi = 0
+\end{equation}
+which introduces two additional terms, corresponding to the magnetic and the electric dipole moment of the electron, respectively.
+At the time, Dirac thought the EDM term was merely a consequence of the ``squaring'' used in the derivation
+arbitrarily introducing an imaginary term from a real Hamiltonian, and disregarded it.
+It was only until 1958 when Salpeter~\cite{Salpeter1958EDMTerm} reintroduced this term in an ``interaction Lagrangian'' point of view.
+\subsection{Form factor decomposition}
+The second method is based on form factor decomposition. This method was recently seen in~\cite{Nowakowski2005FormFactor}.
+We start by expressing the expectation value of the electromagnetic 4-current as 
+\begin{equation}
+	\mel{p_{f}}{j^{\mu}}{p_{i}} = \bar{u}(\vb{p_{f}})\mathcal{O}^{\mu}(l,q)u(\vb{p_{i}})
+\end{equation}
+where \(l \equiv p_{f} + p_{i} \) is the total 4-momentum, \(q \equiv p_{f} - p_{i}\) is the momentum transfer,
+and \(\mathcal{O}^{\mu}(l,q) \) is an operator whose matrix element between the spinors is a Lorentz vector.
+We then want to decompose \(\mathcal{O}^{\mu}(l,q) \) in terms of the Clifford algebra of the Dirac gamma matrices.
+After identifying all possible combinations and contractions of \(\left\{q^{\mu}, l^{\mu}, \gamma^{\mu}, \gamma^{5}, \sigma^{\mu\nu}, \epsilon^{\mu\nu\alpha\beta}\right\} \),
+applying various Gordon-like identities, and imposing gauge invariance\footnote{Note that without gauge invariance imposed, there ought to be six independent terms, which is the case for the Weak current.} \(q_{\mu}j^{\mu} = 0 \), we arrive at four independent terms
+\begin{equation}
+	\bar{u}(\vb{p_{f}})\mathcal{O}^{\mu}(l,q)u(\vb{p_{i}})
+	= \bar{u}(\vb{p_{f}})\left\{\right\}u(\vb{p_{i}})
+\end{equation}
 
-The effective interaction term that produces EDM \(d_{f} \) for a fermion \(f \) is the dimension-5 operator
+We then couple this with the electromagnetic potential \(A_{\mu} \) to obtain some physical insight on this result.
+Taking the non-relativistic limit \((q^{2} = 0) \), we can identify 
+\begin{equation}
+	F_{1}(0) = Q, \quad \frac{1}{2m}\left(F_{1}(0)+F_{2}(2)\right) = \mu, \quad -\frac{1}{2m}F_{3}(0) = d
+\end{equation}
+are the charge, magnetic dipole moment, and electric dipole moment, respectively.
+Transforming the coupled current plus EM field back into position space, we can obtain the addition to the interaction Lagranginan for each term as well.
+
+Regardless of approach, the end result, in terms of quantum field theory, is the inclusion of an effective dimension-5 interaction operator to the EM Lagrangian,
 \begin{equation}
   -\frac{i}{2}d_{f}\left(\bar{f}\sigma^{\mu\nu}\gamma_{5}f\right)F_{\mu\nu}.
 \end{equation}
+that produces EDM \(d_{f} \) for a fermion \(f \), where \(F_{\mu\nu} \) is the electromagnetic field strength tensor.
 
 \section{G2HDM contributions to EDMs}
 
@@ -118,6 +178,7 @@ with loop functions
 	B(a)=
 \end{align}
 
+\section{Chromoelectric dipole moment}
 For quarks, they participate in the strong interaction, so there will be QCD-related effects.
 This can be found in two additional terms in the Lagrangian: 
 the chromo-EDM \(\tilde{d}_{f} \) for fermion \(f \), and the Weinberg term \(C_{W} \) for gluon interactions~\cite{Weinberg89}, written as
