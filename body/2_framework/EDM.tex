@@ -2,37 +2,43 @@
 \label{ch:EDM}
 
 \section{The electric dipole moment in particle physics}
-Classically, the electric dipole moment of a system is found by 
+Classically, the electric dipole moment of a charge distribution is found as the coefficient of the \(l = 1 \) term in the multipole expansion of the potential of said distribution.
+Explicitly, it is\footnote{In classical texts, the dipole moment is represented with the symbol \(\vb{p} \).
+For the sake of consistency with the particle physics notation, I have chosen the symbol \(\vb{d} \) instead.}
 \begin{equation}
-	\vb{d} = \int (\vb{r}-\vb{r_{0}})\rho(\vb{r})\dd[3]{\vb{r}}
+	\vb{d} = \int (\vb{r}-\vb{r}_{0})\rho(\vb{r})\dd[3]{\vb{r}}
 \end{equation}
-with \(\vb{r_{0}} \) (check Griffiths/Jackson Multipole expansion).
-Physically, it is inherently a property of composite systems.
-For a system of zero net charge, it is related to the seperation of charges or nonuniformity in the charge distribution;
-for a system of nonzero net charge, it is also related to the difference of the position of the point of reference with respect to the charge in question.
-However, in particle physics, we are not dealing with composite systems, but the \textit{intrinsic} properties of the fundamental particles.
-In the case of \textit{intrinsic} EDM, particle physicists are interested in the EDMs of various fermions.
+with \(\vb{r}_{0} \) the center of mass of the charge distribution~\cite{Griffiths2013Electrodynamics, Jackson1999Electrodynamics}.
+It is related to the seperation of charges or nonuniformity along a single axis in the charge distribution;
+for a distribution of nonzero net charge, it is also related to the position of the center of mass with respect to the origin.
+It is inherently a property of systems of finite size\footnote{There are point-like ``dipoles'' etc. in the classical framework, but they are purely mathematical and are not attributed to any physical thing.}.
+However, in particle physics, we are not dealing with composite systems, but the properties of the fundamental particles.
+That means we are instead looking for an \textit{intrinsic} EDM of point-like particles that is attributed to the particle itself, and not a seperation of charges.
+This is analogous to the (spin) magnetic dipole moment being an \textit{intrinsic} property and not a tiny loop of current.
+In particluar, particle physicists are interested in the EDMs of various fermions, since they are the point-like building blocks of all matter.
 Generally speaking, there are two ways to introduce this ``EDM term'', approaching the issue from slightly different angles.
 \subsection{The Dirac method}
 The first method is that of Dirac~\cite{Dirac1928DiracEquation}. 
-In his 1928 paper, which gave birth to the famous Dirac equation, he also wrote down the equation for the electron in an arbitrary electromagnetic field.
+In his 1928 paper, which gave birth to his famous Dirac equation, he also wrote down the equation for the electron in an arbitrary electromagnetic field.
 Adapted into more modern notation, it is written as
 \begin{equation}\label{eq:DiracEqwithEMField}
-	\left[-(E-e\phi) + \vb{\alpha}\vdot(\vb{p}-e\vb{A}) + \beta m\right]\psi = 0
+	\left[-(E-e\phi) + \bm{\alpha}\vdot(\vb{p}-e\vb{A}) + \beta m\right]\psi = 0
 \end{equation}
 where
 \begin{equation}
-	\vb{\alpha} = \left(\right), \quad \quad \beta = 
+	\alpha_{i} = \gamma^{5}\Sigma_{i} = \begin{pmatrix} 0 & I \\ I & 0 \end{pmatrix}\begin{pmatrix} \sigma_{i} & 0 \\ 0 & \sigma_{i} \end{pmatrix}= \begin{pmatrix} 0 & \sigma_{i} \\ \sigma_{i} & 0 \end{pmatrix},
+	\quad \beta = \begin{pmatrix} I & 0 \\ 0 & -I \end{pmatrix}
 \end{equation}
 in the Pauli-Dirac representation.
 By ``squaring'' \eqnref{DiracEqwithEMField} one obtains
 \begin{align}
-	\left[\right]\left[\right]\psi &= 0 \nonumber \\
-	\Longrightarrow \left[\right]\psi &= 0
+	&\left[(E-e\phi) + \bm{\alpha}\vdot(\vb{p}-e\vb{A}) + \beta m\right]\left[-(E-e\phi) + \bm{\alpha}\vdot(\vb{p}-e\vb{A}) + \beta m\right]\psi = 0 \nonumber \\
+	&\Longrightarrow \left[-(E-e\phi)^{2} + (\bm{\Sigma}\vdot(\vb{p}-e\vb{A}))^{2} + m^{2} \right. \nonumber \\
+	&\qquad \left. + \gamma^{5}\left\{(E-e\phi)(\bm{\Sigma}\vdot(\vb{p}-e\vb{A})) - (\bm{\Sigma}\vdot(\vb{p}-e\vb{A}))(E-e\phi)\right\}\right]\psi = 0
 \end{align}
-After some matrix algebra, in particular \((\vb{\sigma}\vdot\vb{a})(\vb{\sigma}\vdot\vb{b}) = (\vb{a}\vdot\vb{b})I + i\vb{\sigma}\vdot(\vb{\vb{a}\cross\vb{b}}) \), we arrive at
+After some matrix algebra, in particular \((\bm{\Sigma}\vdot\vb{a})(\bm{\Sigma}\vdot\vb{b}) = (\vb{a}\vdot\vb{b})I + i\bm{\Sigma}\vdot(\vb{\vb{a}\cross\vb{b}}) \), and casting \(E \) and \(\vb{p} \) back into their operator forms when necessary, we arrive at
 \begin{equation}
-	\left[-(E-e\phi)^{2} + (\vb{p}-e\vb{A})^{2} + m^{2} - e\vb{\sigma}\vdot\vb{B} - ie\gamma^{5}\vb{\sigma}\vdot\vb{E}\right]\psi = 0
+	\left[-(E-e\phi)^{2} + (\vb{p}-e\vb{A})^{2} + m^{2} - e\bm{\Sigma}\vdot\vb{B} - ie\gamma^{5}\bm{\Sigma}\vdot\vb{E}\right]\psi = 0
 \end{equation}
 which introduces two additional terms, corresponding to the magnetic and the electric dipole moment of the electron, respectively.
 At the time, Dirac thought the EDM term was merely a consequence of the ``squaring'' used in the derivation
@@ -40,7 +46,7 @@ arbitrarily introducing an imaginary term from a real Hamiltonian, and disregard
 It was only until 1958 when Salpeter~\cite{Salpeter1958EDMTerm} reintroduced this term in an ``interaction Lagrangian'' point of view.
 \subsection{Form factor decomposition}
 The second method is based on form factor decomposition. This method was recently seen in~\cite{Nowakowski2005FormFactor}.
-We start by expressing the expectation value of the electromagnetic 4-current as 
+We start by expressing the expectation value of the electromagnetic 4-current in momentum space as 
 \begin{equation}
 	\mel{p_{f}}{j^{\mu}}{p_{i}} = \bar{u}(\vb{p_{f}})\mathcal{O}^{\mu}(l,q)u(\vb{p_{i}})
 \end{equation}
@@ -49,10 +55,12 @@ and \(\mathcal{O}^{\mu}(l,q) \) is an operator whose matrix element between the 
 We then want to decompose \(\mathcal{O}^{\mu}(l,q) \) in terms of the Clifford algebra of the Dirac gamma matrices.
 After identifying all possible combinations and contractions of \(\left\{q^{\mu}, l^{\mu}, \gamma^{\mu}, \gamma^{5}, \sigma^{\mu\nu}, \epsilon^{\mu\nu\alpha\beta}\right\} \),
 applying various Gordon-like identities, and imposing gauge invariance\footnote{Note that without gauge invariance imposed, there ought to be six independent terms, which is the case for the Weak current.} \(q_{\mu}j^{\mu} = 0 \), we arrive at four independent terms
-\begin{equation}
-	\bar{u}(\vb{p_{f}})\mathcal{O}^{\mu}(l,q)u(\vb{p_{i}})
-	= \bar{u}(\vb{p_{f}})\left\{\right\}u(\vb{p_{i}})
-\end{equation}
+\begin{align}
+	&\bar{u}(\vb{p_{f}})\mathcal{O}^{\mu}(l,q)u(\vb{p_{i}}) \nonumber \\
+	&= \bar{u}(\vb{p_{f}})\left\{F_{1}(q^{2})\gamma^{\mu} + \frac{i\sigma^{\mu\nu}}{2m}q_{\nu}F_{2}(q^{2})\right. \nonumber \\
+	&\left.\qquad\quad + (-\gamma^{5}\sigma^{\mu\nu}q_{\nu})\frac{1}{4m}F_{3}(q^{2})
+	+ \frac{1}{2m}\left(q^{\mu}-\frac{q^{2}}{2m}\gamma^{\mu}\gamma^{5}\right)F_{4}(q^{2})\right\}u(\vb{p_{i}})
+\end{align}
 
 We then couple this with the electromagnetic potential \(A_{\mu} \) to obtain some physical insight on this result.
 Taking the non-relativistic limit \((q^{2} = 0) \), we can identify 
@@ -62,11 +70,21 @@ Taking the non-relativistic limit \((q^{2} = 0) \), we can identify
 are the charge, magnetic dipole moment, and electric dipole moment, respectively.
 Transforming the coupled current plus EM field back into position space, we can obtain the addition to the interaction Lagranginan for each term as well.
 
+\subsection{General properties of EDM}
 Regardless of approach, the end result, in terms of quantum field theory, is the inclusion of an effective dimension-5 interaction operator to the EM Lagrangian,
 \begin{equation}
   -\frac{i}{2}d_{f}\left(\bar{f}\sigma^{\mu\nu}\gamma_{5}f\right)F_{\mu\nu}.
 \end{equation}
 that produces EDM \(d_{f} \) for a fermion \(f \), where \(F_{\mu\nu} \) is the electromagnetic field strength tensor.
+If we examine the EDM term under the lens of discrete symmetry transformations, we can see that
+\begin{equation}
+\begin{split}
+	\vb{E} &\xrightarrow{P} -\vb{E} & \vb{E} &\xrightarrow{T} \vb{E} \\
+	\bm{\Sigma} &\xrightarrow{P} \bm{\Sigma} & \bm{\Sigma} &\xrightarrow{T} -\bm{\Sigma}
+\end{split}
+\end{equation}
+for parity transformation \(P\) and time-reversal transformation \(T\).
+Thus, a nonzero EDM of funamental particles indicates that both time-reversal and parity invariance are broken.
 
 \section{G2HDM contributions to EDMs}
 
