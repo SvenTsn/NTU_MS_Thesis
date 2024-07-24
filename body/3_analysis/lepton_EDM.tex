@@ -1,30 +1,56 @@
 \chapter{Electric Dipole Moment of Leptons}
 \label{ch:leptonEDM}
 
-Naturally, following the framework laid out previously, we want to perform calculations on the various leptons.
-A brief review of past experimental results shows that the experimental development of electron EDM (eEDM) over the past few years has been remarkably rapid.
+Naturally, following the framework laid out previously, we want to perform EDM calculations on the various leptons.
+
+\section{Experimental Overview}
+A brief review of past experimental results is given in \tabref{tab:leptonEDMExperiments}.
+\begin{tabular}[t]{ccc}
+    \toprule
+    Lepton & EDM (\(e\,\mathrm{cm} \)) & Experiment \\
+    \midrule
+    \(e \) & \(|d_{e}| < 4.1 \times 10^{-30}\) & JILA 2023~\cite{JILA23} \\
+    \bottomrule
+\end{tabular}
+As can be seen in the table, the experimental development of electron EDM (eEDM) over the past few years has been remarkably rapid.
 Just earlier last year, JILA~\cite{JILA23} has surpassed the previous bound from ACME~\cite{ACME18} and pushed the precision of eEDM down to \(|d_{e}| < 4.1 \times 10^{-30}\) \(e\,\mathrm{cm} \).
 It is noteworthy to point out that these eEDM experiments are relatively small in scale, ``tabletop experiments'' even when compared to behemoths like the LHC, which makes the extreme precision achieved all the more impressive.
-For the electron, an extensive study of eEDM in {\gthdm} can be found in the 2018 and 2020 papers of Fuyuto, Senaha, and Hou (Refs.~\cite{FSH20}).
+
+\section{The Electron}
+For the electron, an extensive study of eEDM in {\gthdm} can be found in the 2018 and 2020 papers of Fuyuto, Hou, and Senaha (Refs.~\cite{FHS20}).
 Our investigation on eEDM is essentially an extension of the 2020 paper to a larger parameter space.
 
-As mentioned before, one big motivation for {\gthdm} as a viable model is the fact that \(\order{1} \rho_{tt}\) can drive baryogenesis through \(\lambda_{t}\Im\rho_{tt} \).
-However, this same \(\rho_{tt} \), along with \(\rho_{ff} \) for a given fermion \(f \), also generates EDM for said fermion.
+\subsection{Cancellation Mechanism}
+As mentioned in [CROSSREF], one big motivation for {\gthdm} as a viable model is the fact that \(\order{1} \rho_{tt}\) can drive baryogenesis through \(\lambda_{t}\Im\rho_{tt} \).
+However, this same \(\rho_{tt} \), along with \(\rho_{ff} \) for a given fermion \(f \), also generates EDM for said fermion [CROSSREF].
 We thus arive at a ``point of tension'' between theory and experiment:
 we desire a large \(\rho_{tt} \) for baryogenesis, but need a small \(\rho_{tt} \) to survive precision bounds on various EDMs.
 Electron EDM, in particular, is a great ``observable of contention'', since experiments measuring it are the most precise compared to other EDMs.
-In an attempt to address this issue, Fuyuto, Senaha, and Hou proposed a ``cancellation ansatz'' between \(\rho_{ee} \) and \(\rho_{tt} \) 
+In an attempt to address this issue, Fuyuto, Hou, and Senaha proposed a ``cancellation ansatz'' between \(\rho_{ee} \) and \(\rho_{tt} \) 
 \begin{equation}\label{eq:ansatz}
     \Re\rho_{ee} = -r\frac{\lambda_{e}}{\lambda_{t}}\Re\rho_{tt} \text{, } \quad \Im\rho_{ee} = +r\frac{\lambda_{e}}{\lambda_{t}}\Im\rho_{tt},
   \end{equation}
-that allows for small values of eEDM while keeping a \textit{sizeable} \(\rho_{tt} \).
-The \(r \) depends on the loop functions from the previous chapter.
+which facilitates a ``cancellation mechanism'' that allows for small values of eEDM while keeping a \textit{sizeable} \(\rho_{tt} \).
+The ``cancellation'' in this mechanism arises from the opposite signs of the \(W \)-loop and the top-loop in the Barr-Zee diagrams.
+Referring to~\eqnref{eq:BarrZee-phiG-toploop}~and~\eqnref{eq:BarrZee-cHW-Wloop}, we can see that
+\begin{align}
+    (d^{\phi G}_{l})_{t} = -&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(\rho \text{ couplings})(\text{Loop functions}) \\
+    (d^{\phi G}_{l})_{W} = +&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(\rho \text{ couplings})(\text{Loop functions})
+\end{align}
+thus the effectiveness of such a cancellation is determined by the relationship between the new \(\rho \) couplings and the loop functions of the Barr-Zee diagrams.
+In the case of total cancellation, \((d^{\phi G}_{l})_{t} = -(d^{\phi G}_{l})_{W}\), which gives
+\begin{equation}\label{eq:exact-cancellation}
+    \text{To be added}
+\end{equation}
+which can be factored into a \(\rho \)-dependent part and a loop-function-dependent part \(r \).
+Rearranging~\eqnref{eq:exact-cancellation} thus gives us the form of the cancellation ansatz.
 This ansatz signifies two key points.
 First, it gives a flavor hierarchy \(|\rho_{ee}|/|\rho_{tt}|\sim\lambda_{e}/\lambda_{t} \) that reflects SM.
 Second, it represents a phase lock between \(\rho_{ee} \) and \(\rho_{tt} \).
-This ansatz results in a ``dip'' in eEDM around the \(r \) value of \(\sim 0.7 \),
-which is when the \(W \)-loop and the top-loop in the Barr-Zee diagram effectively cancel each other out.
+With our working assumption of Higgs masses, this ansatz results in a ``dip'' in eEDM around the \(r \) value of \(\sim 0.7 \),
+which is when complete cancellation occurs between the \(W \)-loop and the top-loop.
 This provides a mechanism for the eEDM in {\gthdm} to be small and evade the experimental bounds while not directly modifying \(\rho_{tt} \).
+
 When revisiting their study, we found the assumptions on the value of \(\rho_{tt} \) to be quite ``conservative'', setting \(\Re\rho_{tt} = \Im\rho_{tt} = -0.1 \) (which equates to \(|\rho_{tt}| = 0.1\sqrt{2} \approx 0.14\)).
 We believe that might be due to \textit{playing it safe} under the pressure of the rapid advancements on the experimental front. 
 In our study~\cite{HKT23-2}, we \textit{push against the boundary}, and explore a larger range of \(\rho_{tt} \), up to \(\Re\rho_{tt} = \Im\rho_{tt} = -0.3 \) (\(|\rho_{tt}| = 0.3\sqrt{2} \approx 0.42\)). 
@@ -53,6 +79,7 @@ Nevertheless, the trend we wish to describe is not affected by such.
 From our results, it can be seen that as \(|\rho_{tt}| \) increases, the allowed window of the proportionality parameter \(r \) shrinks, yet there is still a decent range of acceptable probable values.
 \(\Re\rho_{tt} = \Im\rho_{tt} = -0.1 \) was indeed a conservative representative value, and \(\Re\rho_{tt} = \Im\rho_{tt} = -0.3 \) may still be a viable option in the baryogenesis parameter space.
 
+\section{The Muon}
 After the electron, we move on to its slightly heavier cousin, the muon. 
 Since the bound on the muon is not as strong, one does not need to resort to the cancellation ansatz immediately.
 Instead, we perform a scan of the \(\rho_{tt} \) parameter space for a representative \(\rho_{\mu\mu} \) value, and see how it affects the \(\mu \)EDM.
@@ -71,8 +98,9 @@ Our predicted values for \(\mu \)EDM are still two to three orders of magnitude 
 Once the bounds close in, it may also be fruitful to consider the ``cancellation ansatz'' on the muon as well, especially since the leptons share a extra Yukawa matrix \(\rho^{l} \),
 which makes it more likely that the \(\rho_{ll} \) might exhibit similar relationships with \(\rho_{tt} \).
 
+\section{The Tau Lepton}
 Lastly, we analyze the heaviest lepton, the tau. 
-On the experiment front, the precision of tauEDM measurements are still pretty low.
+On the experiment front, the precision of tau EDM (\(\tau \)EDM) measurements are still pretty low.
 We perform the same calculations as the muon, with \(\rho_{\mu\mu} = i\lambda_{\mu} \) replaced by \(\rho_{\tau\tau} = i\lambda_{\tau} \).
 Results are shown in \figref{tauEDM}
 
@@ -84,4 +112,4 @@ Results are shown in \figref{tauEDM}
 \end{figure}
 
 As seen in \figref{tauEDM}, our predicted values are still several orders of magnitude below current experimental results.
-Further precision or methodology improvements are required for a more fruitful analysis of tauEDM, so we just present our results here without much further comment.
+Further precision or methodology improvements are required for a more fruitful analysis of \(\tau \)EDM, so we just present our results here without much further comment.
