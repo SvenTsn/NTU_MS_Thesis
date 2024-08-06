@@ -1,14 +1,72 @@
 \chapter{Conclusion}
 \label{ch:conclusion}
+\section{Comments}
+Before we reach the summary of this study, we want to comment on some unaddressed details.
 
-Some comments, perhaps regarding the masses and degeneracy of the heavy Higgses.
+\subsection{Heavy Higgs Masses}
+Throughout the calculations in this study, we have assumed degeneracy of the exotic Higgses, either at 300 or 500 GeV.
+This has been done primarily to reduce the number of variables in the analysis, and focus on the effects of the extra Yukawa couplings on various EDMs.
+As a matter of fact, this assumption is actually two assumptions in one: the choice of benchmark mass value and the choice of imposing degeneracy.
+We would like to address the concequences of lifting/flexing each assumption seprately.
+First, regarding the choice of benchmark.
+For eEDM and nEDM, we have set the exotic Higgs masses to the higher value of 500 GeV.
+This leads to a smaller two-loop contribution to the EDMs, since the loop functions are dependent on and monotonically increasing with \(m_{t/W}^{2}/m_{H/A/H^{+}}^{2} \).
+This also changes the exact \(r \) value where the cancellation occurs.
+However, at the same time, larger exotic Higgs masses lead to a less efficient scenario for baryogenesis.
+In a sense, this is the ``conservative'' benchmark, sacrificing baryogenesis efficiency for some extra ``headroom'' in evading the EDM bounds.
+On the other hand, the 300 GeV mass value used in the \(\mu \)EDM and \(\tau \)EDM calculations is the ``optimistic'' benchmark,
+meant to explore the upper limits of the respective EDMs and see how close we are to the current experimental bounds.
+We have checked the eEDM and nEDM calculations at the 300 GeV benchmark and, unsurprisingly, the qualitative results are the same, with only the quantitative differences described above.
+Second, regarding the mass degeneracy.
+As mentioned in~\secref{g2hdm_in_edm}, with the degeneracy in place, one-loop effects are even further supressed.
+Lifting this degeneracy will increase the importance of the one-loop contribution, but unless the off-diagonal terms of the lepton \(\rho \)-matrix are large,
+which runs against our \textit{flavor hierarchy} phenomenon, 
+the two-loop effects will still be dominant by at least an order of magnitude or two.
+Also, nondegenerate exotic Higgs masses opens us up to the scrutiny of electroweak precision constraints~\cite{PDG2022}.
+This will require us to explore the scenarios of custodial symmetry \(m_{A} = m_{H^{+}} \) and twisted-custodial symmetry~\cite{Gerard2007TwistedCustodial} \(m_{H} = m_{H^{+}} \).
+All in all, we can still enlarge the parameter space by varying the masses of the exotic Higgses, but we will have to deal with different constraints.
+We thus relegate a thorough investigation of the Higgs masses to further studies.
 
-We present an analysis of various EDMs of fundamental particles in the framework of a {\gthdm}.
+\subsection{Muon \(g-2 \)}
+During our analysis of \(\mu \)EDM and \(\tau \)EDM, the Fermilab Muon g-2 experiment reported~\cite{Fermilab2021MuonGminus2} their first measurement of the muon anomalous magnetic moment \(a_{\mu} = (g-2)_{\mu} \).
+Their result not only confirmed the old BNL result~\cite{BNL2006MuonGminus2}, but also put the combined experimental value at \(a_{\mu}^{\text{Exp}} = \num{116592061(41)e-11} \),
+which disagreed with the SM prediction~\cite{Aoyama2020MuonTheory} \(a_{\mu}^{\text{SM}} = \num{116591810(43)e-11} \) by more than \(4\sigma \),
+\begin{equation}
+    a_{\mu}^{\text{Exp}} - a_{\mu}^{\text{SM}} = (251 \pm 59) \times 10^{-11}.
+\end{equation}
+This was indeed a shock at that time, which prompted us to add in related discussions and analysis to our EDM study.
+As it is not the main point of \textit{this} study, we refer you to section V of our paper~\cite{HKT2022MuonEDMTauEDM} for detailed discussion, with a brief summary given here.
+Muon \(g-2 \) has main contributions in {\gthdm} from the one-loop diagram, so to accomodate the experimental result, 
+one needs~\cite{HouEtal2021Muon} very large \(\rho_{\tau\mu} \) and \(\rho_{\mu\tau} \), as well as sub-TeV \textit{nondegenerate} \(m_{H} \) and \(m_{A} \).
+This implies a near-perfect alignment \(c_{\gamma} \to 0\) and a small \(\rho_{tt} \).
+This in turn suppresses the two-loop contributions to all EDMs, while also makeing baryogenesis less favorable.
+Although the most recent experimental update~\cite{Muon2023Gminus2} on this matter has strengthened the precision of the 2021 result, 
+the other fronts do not look as optimistic.
+Recent lattice QCD results~\cite{Borsanyi2021Lattice} are in tension with other relevant experimental results~\cite{CMD32023eetopipi};
+meanwhile, theorists are attempting~\cite{Colangelo2022Gminus2theory} to reconcile the current theoretical situation.
+It remains to be seen how this ``anomaly'' will develop in the future.
+
+\subsection{Top Chromo-EDM}
+We would like to mention that the nEDM portion of this study was originally motivated by the ability of the LHC to probe top CPV through top chromo-EDM~\cite{CMS2023}.
+Probing the EDM and cEDM of the top quark directly would be ideal for direct exploration of the \(\rho_{tt} \) parameter space.
+Alas, the current bounds of the top cEDM are still relatively weak, so we shifted our gaze towards other hadronic EDMs and settled on nEDM, 
+where the up and down cEDM come into play.
+Fortunately, we found rather good prospects for {\gthdm} in nEDM!
+We do hope that future improvements on the top cEDM measurement will come to fruition,
+and eagerly anticipate the insights it may bring in the realm of CPV and BAU.
+
+\section{Summary and Conclusion}
+In this thesis, we have analyzed various EDMs of fundamental particles in the framework of  the General Two Higgs Doublet Model,
+a two-Higgs doublet model characterized by lack of \(Z_{2} \) symmetry, \textit{alignment} between the SM and exotic Higgs, and extra Yukawa couplings governed by \textit{flavor hierarchy}.
+
 We note that to evade precision bounds while satisfying the conditions for baryogenesis, a cancellation is possible,
 which is also an indicator of an underlying \textit{flavor hierarchy}.
 This is most prevalent in eEDM, where bounds are the strongest, and experimental precision improving rapidly.
-We analyze muEDM, with our predictions still being a couple orders of magnitude below current experimental bounds.
-% Comment on interplay with muon g-2.
-We present results for tauEDM, but provide no further analysis since the bounds are still too imprecise.
+We analyze \(\mu \)EDM, with our predictions still being a couple orders of magnitude below current experimental bounds.
+We present results for \(\tau \)EDM, but provide no further analysis since the bounds are still too imprecise.
 We analyze quark EDM through nEDM, and optain promising prospective results, especially when viewed together with eEDM.
 We stress that this is a noteworthy area to pay attention to in the upcoming decade or two.
+
+The improved precision of the eEDM and nEDM experiments may shake up new discussion in the realm of CPV.
+Along with direct searches for exotic Higgs at LHC, ongoing efforts at Belle II as well as other flavor frontiers,
+we might soon see whether we can unveil what Nature has laid out for baryogenesis.
