@@ -34,6 +34,64 @@ M.~Thomson, \emph{Modern particle physics}.\hskip 1em plus 0.5em minus
   2013.
 \BIBentrySTDinterwordspacing
 
+\bibitem{Sarkar2008AstroparticlePhysics}
+\BIBentryALTinterwordspacing
+U.~Sarkar, \emph{Particle and astroparticle physics}, ser. Series in high
+  energy physics, cosmology, and gravitation.\hskip 1em plus 0.5em minus
+  0.4em\relax New York: Taylor \& Francis, 2008.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Liddle2015Cosmology}
+A.~R. Liddle, \emph{An introduction to modern cosmology}, 3rd~ed.\hskip 1em
+  plus 0.5em minus 0.4em\relax Chichester, West Sussex: John Wiley and Sons,
+  Inc., 2015.
+
+\bibitem{BarrowTurner1981Baryosynthesis}
+\BIBentryALTinterwordspacing
+J.~D. Barrow and M.~S. Turner, ``Baryosynthesis and the origin of galaxies,''
+  \emph{Nature}, vol. 291, no. 5815, pp. 469--472, 1981.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Turner1981GUT}
+\BIBentryALTinterwordspacing
+M.~S. Turner, ``Big band baryosynthesis and grand unification,'' \emph{AIP
+  Conference Proceedings}, vol.~72, no.~1, pp. 224--243, 1981.
+\BIBentrySTDinterwordspacing
+
+\bibitem{PenziasWilson1965CMB}
+\BIBentryALTinterwordspacing
+A.~A. Penzias and R.~W. Wilson, ``A measurement of excess antenna temperature
+  at 4080mc/s,'' \emph{Astrophysical Journal}, vol. 142, no.~1, pp. 419--421,
+  1965.
+\BIBentrySTDinterwordspacing
+
+\bibitem{CroninFitch1964KaonCPV}
+\BIBentryALTinterwordspacing
+J.~H. Christenson, V.~L. Fitch, J.~W. Cronin, and R.~Turlay, ``Evidence for
+  $2\pi$ decay of $k^{0}$ meson,'' \emph{Physical Review Letters}, vol.~13,
+  no.~4, pp. 138--+, 1964.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Sakharov1967BAU}
+\BIBentryALTinterwordspacing
+A.~D. Sakharov, ``Violation of cp invariance c asymmetry and baryon asymmetry
+  of universe,'' \emph{Jetp Letters-Ussr}, vol.~5, no.~1, pp. 24--+, 1967.
+\BIBentrySTDinterwordspacing
+
+\bibitem{ShaposhnikovFarrar1993BAU}
+\BIBentryALTinterwordspacing
+G.~R. Farrar and M.~E. Shaposhnikov, ``Baryon asymmetry of the universe in the
+  minimal standard model,'' \emph{Physical Review Letters}, vol.~70, no.~19,
+  pp. 2833--2836, 1993.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Kuzmin1985EWBG}
+\BIBentryALTinterwordspacing
+V.~A. Kuzmin, V.~A. Rubakov, and M.~E. Shaposhnikov, ``On anomalous electroweak
+  baryon-number non-conservation in the early universe,'' \emph{Physics Letters
+  B}, vol. 155, no. 1-2, pp. 36--42, 1985.
+\BIBentrySTDinterwordspacing
+
 \bibitem{Griffiths2013Electrodynamics}
 D.~J. Griffiths, \emph{Introduction to electrodynamics}, 4th~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Boston: Pearson, 2013.
@@ -108,6 +166,27 @@ D.~BowserChao, D.~Chang, and W.~Y. Keung, ``Electron electric dipole moment
 T.~Abe, J.~Hisano, T.~Kitahara, and K.~Tobioka, ``Gauge invariant barr-zee type
   contributions to fermionic edms in the two-higgs doublet models,''
   \emph{Journal of High Energy Physics}, no.~4, 2016.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Weinberg1989Gluon}
+\BIBentryALTinterwordspacing
+S.~Weinberg, ``Larger higgs-boson-exchange terms in the neutron electric-dipole
+  moment,'' \emph{Physical Review Letters}, vol.~63, no.~21, pp. 2333--2336,
+  1989.
+\BIBentrySTDinterwordspacing
+
+\bibitem{FHS2018EWBGandEDM}
+\BIBentryALTinterwordspacing
+K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
+  top yukawa couplings,'' \emph{Physics Letters B}, vol. 776, pp. 402--406,
+  2018.
+\BIBentrySTDinterwordspacing
+
+\bibitem{FHS2020EDMCancellation}
+\BIBentryALTinterwordspacing
+------, ``Cancellation mechanism for the electron electric dipole moment
+  connected with the baryon asymmetry of the universe,'' \emph{Physical Review
+  D}, vol. 101, no.~1, 2020.
 \BIBentrySTDinterwordspacing
 
 \bibitem{HKT2024eEDMnEDM}
