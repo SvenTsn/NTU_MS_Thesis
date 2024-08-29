@@ -5,7 +5,7 @@ Following the framework laid out previously, we want to perform EDM calculations
 
 \section{Experimental Overview}
 A brief overview of current experimental bounds and projected future experimental sensitivity is given in \tabref{leptonEDMExperiments}.
-\begin{table}[htp]
+\begin{table}[thp]
     \centering
     \begin{adjustbox}{center}
         \begin{small}
@@ -81,16 +81,7 @@ so, for the sake of numerical illustration of the flavor hierarchy, we extend th
 \end{equation}
 We must reiterate that this is merely a move of convenience, and the actual values of the \(\rho_{ff} \)s need not precisely match this ansatz.
 Results are shown in \figref{eEDM}.
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=7.95cm,height=5.55cm,angle=-90]{fig2_1.pdf}\\
-    \includegraphics[width=6.95cm,height=5.55cm,angle=-90]{fig2_2.pdf}\\
-    \includegraphics[width=6.95cm,height=5.55cm,angle=-90]{fig2_3.pdf}
-    \caption{eEDM v.s. \(r \) for a larger range of \(\rho_{tt} \) with ansatz~Eq.~\eqref{eq:ansatz-extended}. (\(c_{\gamma} = 0.1, m_{H, A, H^+} = 500\,\mathrm{GeV} \))}
-    \label{fig:eEDM}
-\end{figure}
-
+% Figure: eEDM cancellation results
 For the sake of clarity, we have taken a slight liberty in illustrating the range of the purple ``allowed window'' band,
 using the left- and right-most curves instead of the left and right side of a given curve.
 Nevertheless, the trend we wish to describe is not affected by such.
@@ -102,14 +93,7 @@ After the electron, we move on to its slightly heavier cousin, the muon.
 Since the bound on the muon is not as strong, one does not need to resort to the cancellation ansatz immediately.
 Instead, we perform a scan of the \(\rho_{tt} \) parameter space for a representative \(\rho_{\mu\mu} \) value, and see how it affects the \(\mu \)EDM.
 Results are shown in \figref{muEDM}.
-
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=0.7\textwidth]{muEDM.pdf}
-    \caption{\(\mu \)EDM results.}
-    \label{fig:muEDM}
-\end{figure}
-
+% Figure: muonEDM results
 We see that there is still a ``cancellation dip'' for the neutral scalar-attached loops, which arises from the opposite signs of the \(W \)-loop and the top-loop.
 The details of said cancellation is exactly the same as that of the electron.
 Our predicted values for \(\mu \)EDM are still two to three orders of magnitude below the current bounds, so we are eager to see development on the experimental front.
@@ -117,15 +101,13 @@ Once the bounds close in, it may also be fruitful to consider the ``cancellation
 which makes it more likely that the \(\rho_{ll} \) might exhibit similar relationships with \(\rho_{tt} \).
 
 \section{The Tau Lepton}
-\begin{figure}[p]
-    \centering
-    \includegraphics[width=0.7\textwidth]{tauEDM.pdf}
-    \caption{\(\tau \)EDM results.}
-    \label{fig:tauEDM}
-\end{figure}
-Lastly, we analyze the heaviest lepton, the tau. 
+Lastly, we analyze the heaviest lepton, the tau.
 On the experimental front, the precision of tau EDM (\(\tau \)EDM) measurements are still pretty low.
 We perform the same calculations as the muon, with \(\rho_{\mu\mu} = i\lambda_{\mu} \) replaced by \(\rho_{\tau\tau} = i\lambda_{\tau} \).
 Results are shown in \figref{tauEDM}.
+% Figure: tauEDM results
 As seen in the figure, our predicted values are still several orders of magnitude below current experimental results.
 Further precision or methodology improvements are required for a more fruitful analysis of \(\tau \)EDM, so we just present our results here without much further comment.
+
+\clearpage
+\input{body/3_analysis/lepton_EDM_figures.tex}
