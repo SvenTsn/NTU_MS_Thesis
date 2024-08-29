@@ -1,0 +1,141 @@
+% General One-loop diagram
+\begin{figure}[p]
+	\centering
+	\begin{fmfgraph*}(300, 125)
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2}
+		\fmf{plain}{i1,v1}
+		\fmf{dashes,tension=0.3}{v1,v2}
+		\fmf{plain}{v2,o1}
+		\fmffreeze
+		\fmf{photon,tension=1}{v4,o2}
+		\fmf{phantom,tension=1}{i2,v3}
+		\fmf{plain,left=0.268}{v1,v3}
+		\fmf{plain,tension=1.65,left=0.268}{v3,v4}
+		\fmf{plain,left=0.268}{v4,v2}
+		\fmfiv{label=$f$,label.angle=60}{vloc(__i1)}
+		\fmfiv{label=$f$,label.angle=120}{vloc(__o1)}
+		\fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
+		\fmfi{phantom,label=$\phi$,label.side=left}{vpath(__v1,__v2)}
+		% \fmfi{phantom,label=$G=\gamma,,Z$,label.side=left}{vpath(__v4,__v2)}
+		% \fmfi{phantom,label=$t$,label.side=left}{vpath(__v3,__v4)}
+	\end{fmfgraph*}
+	\caption{One-loop diagram}
+	\label{fig:oneloop}
+\end{figure}
+
+% General Barr-Zee diagram
+\begin{figure}[p]
+	\centering
+	\begin{fmfgraph*}(300, 200)
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2}
+		\fmf{plain}{i1,v1}
+		\fmf{fermion,tension=0.25}{v1,v2}
+		\fmf{plain}{v2,o1}
+		\fmffreeze
+		\fmfpoly{plain,smooth,filled=shaded,tension=0.8}{v3,v4,v5,v6}
+		\fmf{dashes}{v1,v3}
+		\fmf{boson}{v4,v2}
+		\fmf{photon,tension=1.25}{v5,o2}
+		\fmf{phantom,tension=1.25}{i2,v6}
+		\fmffreeze
+
+		\fmfiv{label=$f$,label.angle=60}{vloc(__i1)}
+		\fmfiv{label=$f$,label.angle=120}{vloc(__o1)}
+		\fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
+		\fmfi{phantom,label=$\phi$,label.side=left}{vpath(__v1,__v3)}
+		\fmfi{phantom,label=$V$,label.side=left}{vpath(__v4,__v2)}
+		% \fmfi{phantom,label=$f$,label.side=right,label.dist=0.01w}{vpath(__v3,__v4)}
+	\end{fmfgraph*}
+	\caption{Two-loop Barr-Zee diagram}
+	\label{fig:BarrZee_general}
+\end{figure}
+
+% Specific Barr-Zee diagrams
+\begin{figure}[p]
+	\centering
+	\begin{adjustbox}{center}
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{neutralHiggs}{toploop}
+		\caption{Neutral Higgs, top loop}
+		\label{fig:BarrZee-phiG-toploop}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{neutralHiggs}{Wloop}
+		\caption{Neutral Higgs, \(W \) loop}
+		\label{fig:BarrZee-phiG-Wloop}
+	\end{subfigure}
+	\end{adjustbox}
+	\begin{adjustbox}{center}
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{neutralHiggs}{cHloop}
+		\caption{Neutral Higgs, charged Higgs loop}
+		\label{fig:BarrZee-phiG-cHloop}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{chargedHiggs}{toploop}
+		\caption{Charged Higgs, top/bottom loop}
+		\label{fig:BarrZee-cHW-tbloop}
+	\end{subfigure}
+	\end{adjustbox}
+	\begin{adjustbox}{center}
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{chargedHiggs}{Wloop}
+		\caption{Charged Higgs, \(W \) loop}
+		\label{fig:BarrZee_cHW_Wloop}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific{(210,140)}{chargedHiggs}{cHloop}
+		\caption{Charged Higgs, charged Higgs loop}
+		\label{fig:BarrZee-cHW-cHloop}
+	\end{subfigure}
+	\end{adjustbox}
+	\caption{Specific Two-loop Barr-Zee diagrams}
+	\label{fig:BarrZee-specific}
+\end{figure}
+
+% Chromo-related diagrams
+\begin{figure}[p]
+	\centering
+    \begin{adjustbox}{center}
+	\begin{subfigure}[t]{0.6\textwidth}
+		\centering
+		\barrzeespecific[chromo]{(210,140)}{neutralHiggs}{toploop}
+		\caption{Barr-Zee diagram, gluons}
+		\label{fig:BarrZee-chromo}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.6\textwidth}
+		\begin{fmfgraph*}(180, 120)
+			\fmfleft{i1}
+			\fmfright{o1,o2}
+			\fmf{gluon,tension=1.25}{i1,v1}
+			\fmfpolyn{phantom,smooth,tension=0.8}{v}{8}
+			\fmf{gluon}{v4,o1}
+			\fmf{gluon}{v6,o2}
+			\fmffreeze
+			\fmf{dashes}{v3,v7}
+			\fmfcyclen{plain,right=0.199}{v}{8}
+			% Add our labels
+			\fmfiv{label=$g$,label.angle=60}{vloc(__i1)}
+			\fmfiv{label=$g$,label.angle=60}{vloc(__o1)}
+			\fmfiv{label=$g$,label.angle=-60}{vloc(__o2)}
+			\fmfi{phantom,label=$\phi/H^{\pm}$,label.side=right}{vpath(__v3,__v7)}
+			\fmfiv{label=$t$,label.angle=0}{vloc(__v1)}
+			\fmfiv{label=$t/b$,label.angle=0}{vloc(__v5)}
+			% \fmfi{phantom,label=$t$,label.side=right}{vpath(__v8,__v2)}
+			% \fmfi{phantom,label=$t(b)$,label.side=right}{vpath(__v4,__v6)}
+		\end{fmfgraph*}
+		\caption{Weinberg diagram}
+		\label{fig:Weinberg}
+	\end{subfigure}
+    \end{adjustbox}
+	\caption{Diagrams relevant to chromo-EDM}
+	\label{fig:chromo-edm-all}
+\end{figure}

@@ -7,6 +7,8 @@
 % Commonly used packages
 % =============================================================================
 
+\usepackage{etoolbox}
+
 % For removing Package ifpdf Error
 %%%%%%\let\ifpdf\relax
 
@@ -180,3 +182,64 @@
 \renewcommand{\Re}{\mathrm{Re}}
 \renewcommand{\Im}{\mathrm{Im}}
 \newcommand{\ecm}{e\,\mathrm{cm}}
+
+\newcommand{\barrzeespecific}[4][photon]{%
+\begin{adjustbox}{margin=12pt 4pt 12pt 12pt,center}
+\begin{fmfgraph*}#2
+  \fmfleft{i1,i2}
+     \fmfright{o1,o2}
+     \fmf{plain}{i1,v1}
+     \fmf{fermion,tension=0.25}{v1,v2}
+     \fmf{plain}{v2,o1}
+  \fmffreeze
+  \fmfpoly{phantom,smooth,tension=0.8}{v3,v4,v5,v6}
+  % \fmf{plain,right}{v4,v5}
+  % \fmf{plain,right}{v5,v6}
+  % \fmf{plain,right}{v6,v3}
+  \fmf{dashes}{v1,v3}
+  \ifstrequal{#1}{chromo}{%
+    \fmf{gluon}{v4,v2}
+    \fmf{gluon,tension=1.25}{v5,o2}
+  }{%
+    \fmf{boson}{v4,v2}
+    \fmf{photon,tension=1.25}{v5,o2}
+  }
+  \fmf{phantom,tension=1.25}{i2,v6}
+  \fmffreeze
+  %
+  \ifstrequal{#4}{toploop}{%
+    \fmf{plain,right=0.414}{v3,v4,v5,v6,v3}
+    \ifstrequal{#3}{neutralHiggs}{\fmfi{phantom,label=$t$,label.side=left}{vpath(__v3,__v4)}}{}
+    \ifstrequal{#3}{chargedHiggs}{\fmfi{phantom,label=$t/b$,label.side=left}{vpath(__v3,__v4)}}{}
+  }{}
+  \ifstrequal{#4}{Wloop}{%
+    \fmf{boson,right=0.414}{v3,v4,v5,v6,v3}
+    \fmfi{phantom,label=$W$,label.side=left}{vpath(__v3,__v4)}
+  }{}
+  \ifstrequal{#4}{cHloop}{%
+    \fmf{dashes,right=0.414}{v3,v4,v5,v6,v3}
+    \fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v3,__v4)}
+  }{}
+  %
+  \ifstrequal{#3}{neutralHiggs}{%
+    \fmfiv{label=$f$,label.angle=60}{vloc(__i1)}
+    \fmfiv{label=$f$,label.angle=120}{vloc(__o1)}
+    \fmfi{phantom,label=$\phi=h,,H,,A$,label.side=left}{vpath(__v1,__v3)}
+    \fmfi{phantom,label=$G=\gamma,,Z$,label.side=left}{vpath(__v4,__v2)}
+  }{}
+  \ifstrequal{#3}{chargedHiggs}{%
+    \fmfiv{label=$f^{\uparrow\downarrow}$,label.angle=60}{vloc(__i1)}
+		\fmfiv{label=$f^{\uparrow\downarrow}$,label.angle=120}{vloc(__o1)}
+		\fmfi{phantom,label=$H^{\pm}$,label.side=left}{vpath(__v1,__v3)}
+		\fmfi{phantom,label=$f^{\downarrow\uparrow}$,label.side=left}{vpath(__v1,__v2)}
+		\fmfi{phantom,label=$W^{\pm}$,label.side=left}{vpath(__v4,__v2)}
+  }{}
+  %
+  \ifstrequal{#1}{chromo}{%
+    \fmfiv{label=$g$,label.angle=0}{vloc(__o2)}
+  }{%
+    \fmfiv{label=$\gamma$,label.angle=0}{vloc(__o2)}
+  }
+\end{fmfgraph*}
+\end{adjustbox}
+}
