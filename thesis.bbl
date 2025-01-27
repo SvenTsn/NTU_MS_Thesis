@@ -92,6 +92,13 @@ V.~A. Kuzmin, V.~A. Rubakov, and M.~E. Shaposhnikov, ``On anomalous electroweak
   B}, vol. 155, no. 1-2, pp. 36--42, 1985.
 \BIBentrySTDinterwordspacing
 
+\bibitem{Branco20122HDMs}
+\BIBentryALTinterwordspacing
+G.~C. Branco \emph{et~al.}, ``Theory and phenomenology of two-higgs-doublet
+  models,'' \emph{Physics Reports-Review Section of Physics Letters}, vol. 516,
+  no. 1-2, pp. 1--102, 2012.
+\BIBentrySTDinterwordspacing
+
 \bibitem{Griffiths2013Electrodynamics}
 D.~J. Griffiths, \emph{Introduction to electrodynamics}, 4th~ed.\hskip 1em plus
   0.5em minus 0.4em\relax Boston: Pearson, 2013.
@@ -247,6 +254,25 @@ K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
 W.~S. Hou, G.~Kumar, and S.~Teunissen, ``Discovery prospects for electron and
   neutron electric dipole moments in the general two higgs doublet model,''
   \emph{Physical Review D}, vol. 109, no.~1, 2024.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Maksymyk1994ObliqueParam2HDM}
+\BIBentryALTinterwordspacing
+I.~Maksymyk, C.~P. Burgess, and D.~London, ``Beyond s, t, and u,''
+  \emph{Physical Review D}, vol.~50, no.~1, pp. 529--535, 1994.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Grimus2008ObliqueParam-1}
+\BIBentryALTinterwordspacing
+W.~Grimus, L.~Lavoura, O.~M. Ogreid, and P.~Osland, ``A precision constraint on
+  multi-higgs-doublet models,'' \emph{Journal of Physics G-Nuclear and Particle
+  Physics}, vol.~35, no.~7, 2008.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Grimus2008ObliqueParam-2}
+\BIBentryALTinterwordspacing
+------, ``The oblique parameters in multi-higgs-doublet models,'' \emph{Nuclear
+  Physics B}, vol. 801, no. 1-2, pp. 81--96, 2008.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Gerard2007TwistedCustodial}
