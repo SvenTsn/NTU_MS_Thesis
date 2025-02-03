@@ -115,7 +115,7 @@ In this subsection, we list all the relevant formulae involved in the calculatio
 The formulae are compiled from various resources, and verified by us before using them.
 We also explicitly draw out all of the corresponding diagrams in~\figref{BarrZee-specific}.
 The formulae for the neutral-Higgs-mediated diagrams are taken from~\cite{Abe2016EDM};
-The formulae for the charged-Higgs-mediated diagrams are taken from~\cite{BowserChao1997EDM}.
+The formulae for the charged-Higgs-mediated diagrams are taken from~\cite{BowserChao1997EDM,Abe2016EDM}.
 The notation follows that of~\cite{Abe2016EDM}.
 \begin{align}\label{eq:BarrZee-phiG-toploop}
 	(d^{\phi G}_{l})_{t} = -&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}N_{c}Q_{t}(g_{Gll}^{L}+g_{Gll}^{R}) \nonumber \\
@@ -133,27 +133,31 @@ where
 	(d^{\phi G}_{l})_{W} = +\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(g_{Gll}^{L}+g_{Gll}^{R})\frac{g_{\phi ll}^{A}}{m_{l}/v}\frac{g_{WW\phi}}{2m_{W}^{2}/v}\mathcal{I}_{W}^{G}(m_{\phi})
 \end{equation}
 where
-\begin{align}
+\begin{adjustwidth}{-2.5cm}{-2.5cm}
+	\begin{align}
 	\mathcal{I}_{W}^{G}(m_{\phi}) = &g_{WWG}\frac{2m_{W}^{2}}{m_{\phi}^{2}-m_{G}^{2}} \nonumber \\
 	& \times \left[-\frac{1}{4}\left\{\left(6-\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \left(1-\frac{m_{G}^{2}}{2m_{W}^{2}}\right)\frac{m_{\phi}^{2}}{m_{W}^{2}}\right\}
 	\left[-2\frac{m_{\phi}^{2}}{m_{W}^{2}} f\left(\frac{m_{W}^{2}}{m_{\phi}^{2}}\right) + 2\frac{m_{G}^{2}}{m_{W}^{2}} f\left(\frac{m_{W}^{2}}{m_{G}^{2}}\right)\right]\right. \nonumber \\
 	&\left. \quad + \left\{\left(-4+\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \frac{1}{4}\left(\left(6-\frac{m_{G}^{2}}{m_{W}^{2}}\right) + \left(1-\frac{m_{G}^{2}}{2m_{W}^{2}}\right)\frac{m_{\phi}^{2}}{m_{W}^{2}}\right)\right\}
 	\left[-2\frac{m_{\phi}^{2}}{m_{W}^{2}} g\left(\frac{m_{W}^{2}}{m_{\phi}^{2}}\right) + 2\frac{m_{G}^{2}}{m_{W}^{2}} g\left(\frac{m_{W}^{2}}{m_{G}^{2}}\right)\right]\right]
-\end{align}
+	\end{align}
+\end{adjustwidth}
 
 \begin{equation}\label{eq:BarrZee-phiG-cHloop}
 	(d^{\phi G}_{l})_{H^{\pm}} = +\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(g_{Gll}^{L}+g_{Gll}^{R})\frac{g_{\phi ll}^{A}}{m_{l}/v}\frac{g_{\phi H^{+}H^{-}}}{v}\mathcal{I}_{3}^{G}(m_{H^{\pm}}, m_{\phi})
 \end{equation}
 where
-\begin{align}
+\begin{adjustwidth}{-2.5cm}{-2.5cm}
+	\begin{align}
 	\mathcal{I}_{3}^{G}(m_{H^{\pm}}, m_{\phi}) =& -\frac{1}{2}g_{GH^{+}H^{-}}\frac{v^{2}}{m_{\phi}^{2}-m_{G}^{2}} \nonumber \\
 	& \times \left[\left(-2\frac{m_{G}^{2}}{m_{H^{\pm}}^{2}} f\left(\frac{m_{H^{\pm}}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{H^{\pm}}^{2}} f\left(\frac{m_{H^{\pm}}^{2}}{m_{\phi}^{2}}\right)\right)
 	-\left(-2\frac{m_{G}^{2}}{m_{H^{\pm}}^{2}} g\left(\frac{m_{H^{\pm}}^{2}}{m_{G}^{2}}\right) + 2\frac{m_{\phi}^{2}}{m_{H^{\pm}}^{2}} g\left(\frac{m_{H^{\pm}}^{2}}{m_{\phi}^{2}}\right)\right)\right]
-\end{align}
+	\end{align}
+\end{adjustwidth}
 
 \begin{equation}\label{eq:BarrZee-cHW-tbloop}
 	(d^{H^{+}W^{+}}_{l})_{t/b} = -\frac{3e m_{l}}{(4\pi)^{4}}\frac{m_{w}^{2}}{v^{4}}
-	\left(\frac{v^{2}}{2m_{t}m_{l}}\Im{\rho_{tt}\rho_{ll}}\left(Q_{t}F_{t}(m_{H^{\pm}})+Q_{b}F_{b}(m_{H^{\pm}})\right)\right)
+	\left(\frac{v^{2}}{2m_{t}m_{l}}\Im{\rho_{tt}\rho_{ll}}\big(Q_{t}F_{t}(m_{H^{\pm}})+Q_{b}F_{b}(m_{H^{\pm}})\big)\right)
 \end{equation}
 where
 \begin{equation}
@@ -161,25 +165,44 @@ where
 \end{equation}
 
 \begin{equation}\label{eq:BarrZee-cHW-Wloop}
-	(d^{H^{+}W^{+}}_{l})_{W} = 
+	(d^{H^{+}W^{+}}_{l})_{W} = -\frac{e m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\mathcal{S}_{l}\sum_{h}
+	\frac{g_{llh}^{A}}{m_{l}/v}\frac{g_{WWh}}{2m_{W}^{2}/v}\frac{e^{2}}{2s_{W}^{2}}\mathcal{I}_{4}(m_{h}, m_{H^{\pm}})
+\end{equation}
+where
+\begin{equation}
+	\mathcal{I}_{4}(m_{h}, m_{H^{\pm}}) = \frac{m_{W}^{2}}{m_{H^{\pm}}^{2}-m_{W}^{2}}\big[I_{4}(m_{W}, m_{h}) - I_{4}(m_{H^{\pm}}, m_{h})\big]
 \end{equation}
 
 \begin{equation}\label{eq:BarrZee-cHW-cHloop}
-	(d^{H^{+}W^{+}}_{l})_{H^{+}} = 
+	(d^{H^{+}W^{+}}_{l})_{H^{+}} = -\frac{e m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\mathcal{S}_{l}\sum_{h}
+	\frac{g_{llh}^{A}}{m_{l}/v}\frac{g_{HHh}}{v}\frac{e^{2}}{2s_{W}^{2}}\mathcal{I}_{5}(m_{h}, m_{H^{\pm}})
+\end{equation}
+where
+\begin{equation}
+	\mathcal{I}_{5}(m_{h}, m_{H^{\pm}}) = \frac{m_{W}^{2}}{m_{H^{\pm}}^{2}-m_{W}^{2}}\big[I_{5}(m_{W}, m_{h}) - I_{5}(m_{H^{\pm}}, m_{h})\big]
 \end{equation}
 
 with loop functions
 \begin{align}
-	f(a) &= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1-2z(1-z)}{z(1-z)-a}\log{\frac{z(1-z)}{a}} \nonumber \\
+	f(a) &= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1-2z(1-z)}{z(1-z)-a}\log{\frac{z(1-z)}{a}} \\
 	g(a) &= \frac{1}{2} a \int_{0}^{1}\dd{z}\frac{1}{z(1-z)-a}\log{\frac{z(1-z)}{a}}
 \end{align}
 
-\begin{align}
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+	\begin{align}
 	T_{t}(a) &= \frac{1-3a}{a^{2}}\frac{\pi^{2}}{6} + \left(\frac{1}{a}-\frac{5}{2}\right)\log{a}
-	- \frac{1}{a} - \left(1-\frac{1}{a}\right)\left(2-\frac{1}{a}\right)\dilog(1-a)\nonumber \\
+	- \frac{1}{a} - \left(1-\frac{1}{a}\right)\left(2-\frac{1}{a}\right)\dilog(1-a) \\
 	T_{b}(a) &= \frac{2a-1}{a^{2}}\frac{\pi^{2}}{6} + \left(\frac{3}{2}-\frac{1}{a}\right)\log{a}
 	+ \frac{1}{a} - \frac{1}{a}\left(1-\frac{1}{a}\right)\dilog(1-a)
-\end{align}
+	\end{align}
+\end{adjustwidth}
+
+\begin{adjustwidth}{-2.5cm}{-2.5cm}
+	\begin{align}
+	I_{4}(m_{i}, m_{\phi}) &= \int_0^1 d z \frac{m_i^2\left(z(1-z)^2-4(1-z)^2+\frac{m_{H^{\pm}}^{2}m_\phi^2}{m_W^2} z(1-z)^2\right)}{m_W^2(1-z)+m_\phi^2 z-m_i^2 z(1-z)} \log \left(\frac{m_W^2(1-z)+m_\phi^2 z}{m_i^2 z(1-z)}\right)\\
+	I_{5}(m_{i}, m_{\phi}) &= 2 \int_0^1 d z \frac{m_i^2 z(1-z)^2}{m_{H^{\pm}}^2(1-z)+m_\phi^2 z-m_i^2 z(1-z)} \log \left(\frac{m_{H^{\pm}}^2(1-z)+m_\phi^2 z}{m_i^2 z(1-z)}\right)
+	\end{align}
+\end{adjustwidth}
 
 \section{Chromoelectric dipole moment}
 If we were only interested in lepton EDM, then the previous discussion would have been sufficient, since leptons only participate in the electroweak interaction.
@@ -196,11 +219,13 @@ The Weinberg term is relevant because quarks always exist in bound hadronic stat
 That means experimentally we use the EDM of hadrons to infer about quark EDM, and thus the gluon interactions within the hadrons will contribute to the hadron EDM.
 The formulae for calculating the cEDM are
 
-\begin{equation}
+\begin{adjustwidth}{-1.5cm}{-1.5cm}
+	\begin{equation}
 	\tilde{d_{f}} = +\frac{m_{f}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}2g_{s}^{2}\frac{m_{f}^{2}}{m_{\phi}^{2}}
 	\left[\frac{g_{\phi ff}^{A}}{m_{f}/v}\frac{g_{\phi tt}^{V}}{m_{t}/v}\left(-2\frac{m_{\phi}^{2}}{m_{t}^{2}} f\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right) 
 	+ \frac{g_{\phi ff}^{V}}{m_{f}/v}\frac{g_{\phi tt}^{A}}{m_{t}/v}\left(-2\frac{m_{\phi}^{2}}{m_{t}^{2}} g\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right)\right]
-\end{equation}
+	\end{equation}
+\end{adjustwidth}
 
 \begin{equation}
 	C_{W} = 
