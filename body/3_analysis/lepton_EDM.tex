@@ -2,6 +2,14 @@
 \label{ch:leptonEDM}
 
 Following the framework laid out previously, we want to perform EDM calculations on the various leptons.
+However, we shall ignore the neutrinos. 
+Thoretically, they are neutral and massless, thus they \emph{at best} will receive EDM contributions from the charged-Higgs related processes,
+and are of lower theoretical significance.
+Experimentally, EDM experiments are low-energy in nature, and low-energy manipulation of neutrinos is currently experimentally unfeasable.
+We will thus focus our calculations on the electron and its cousins, the muon and the tau.
+Any subsequent mention of ``leptons'' in this work will also by default only be referring to these three leptons. 
+In the following sections of this chapter, we will first give a brief overview of the current experimental status,
+then present our theoretical predictions of the EDMs of the electron, muon, and tau respectively.
 
 \section{Experimental Overview}
 A brief overview of current experimental bounds and projected future experimental sensitivity is given in \tabref{leptonEDMExperiments}.
@@ -13,13 +21,13 @@ A brief overview of current experimental bounds and projected future experimenta
                 \toprule
                 Lepton & \multicolumn{2}{c}{Current bound (\(e \) cm)} & \multicolumn{2}{c}{Future sensitivity (\(e \) cm)}\\
                 \midrule
-                Electron & \num{0.41e-29} & JILA~(2023)~\cite{JILA2023eEDM} & & \\
+                Electron & \num{4.1e-30} & JILA~(2023)~\cite{JILA2023eEDM} & & \\
                 & \num{1.1e-29} & ACME~(2018)~\cite{ACME2018eEDM} & & \\
                 Muon & \num{1.8e-19} & BNL~(2009)~\cite{BNL2009MuonEDM} & \(\sim \num{e-21} \) & FNAL~\cite{Fermilab2016MuonEDM}, J-PARC~\cite{JPARC2019MuonEDM} \\
                 & \(\sim \num{2e-20} \) & Pospelov~(2022)~\cite{Pospelov2022MuonEDM} & \(\sim \num{6e-23} \) & PSI~\cite{PSI2021MuonEDM} \\
-                Tau & \(\Re\,d_{\tau} = \) \num{-0.62(0.63)e-17} & Belle~\cite{Belle2003TauEDM} & \(\sim \num{e-18}-\num{e-19} \) & Belle II~\cite{BelleII2019Projections} \\
+                Tau & \(\Re\,d_{\tau} = \) \num{-0.62(0.63)e-17} & Belle (2003)~\cite{Belle2003TauEDM} & \(\sim \num{e-18}-\num{e-19} \) & Belle II~\cite{BelleII2019Projections} \\
                 & & & \(\sim \num{0.7e-19} \) & Bernreuther~\cite{Bernreuther2021TauEDM}\\
-                & \(\Im\,d_{\tau} = \) \num{-0.40(0.32)e-17} & Belle~\cite{Belle2003TauEDM} & \(\sim \num{e-18}-\num{e-19} \) & Belle II~\cite{BelleII2019Projections} \\
+                & \(\Im\,d_{\tau} = \) \num{-0.40(0.32)e-17} & Belle (2003)~\cite{Belle2003TauEDM} & \(\sim \num{e-18}-\num{e-19} \) & Belle II~\cite{BelleII2019Projections} \\
                 & & & \(\sim \num{0.4e-19} \) & Bernreuther~\cite{Bernreuther2021TauEDM} \\
                 \bottomrule
             \end{tabular}
@@ -29,13 +37,43 @@ A brief overview of current experimental bounds and projected future experimenta
 \label{tab:leptonEDMExperiments}
 \end{table}
 
-As can be seen in the table, the experimental development of electron EDM (eEDM) over the past few years has been remarkably rapid.
-Just earlier last year, JILA~\cite{JILA2023eEDM} has surpassed the previous bound from ACME~\cite{ACME2018eEDM} and pushed the precision of eEDM down to \(|d_{e}| < 4.1 \times 10^{-30}\) \(e\,\mathrm{cm} \).
-It is noteworthy to point out that these eEDM experiments are relatively small in scale, ``tabletop experiments'' even when compared to behemoths like the LHC, which makes the extreme precision achieved all the more impressive.
+As can be seen in the table, the experimental development of electron EDM ({\eedm}) over the past few years has been remarkably rapid.
+Just earlier in 2023, JILA~\cite{JILA2023eEDM} has surpassed the previous bound from ACME~\cite{ACME2018eEDM} and pushed the precision of {\eedm} down to \(|d_{e}| < \num{4.1e-30} \ecm\) .
+It is noteworthy to point out that these {\eedm} experiments are relatively small in scale, ``tabletop experiments'' even when compared to behemoths like the LHC, which makes the extreme precision achieved all the more impressive.
+The smallness of {\eedm}, courtesy of this precision, has put significant pressure on the theoretical side of baryogenesis CPV parameter spaces.
+In~\secref{eEDM} we shall establish in {\gthdm} a way to maintain adequate baryogenesis efficiency while evading the experimental {\eedm} bounds.
 
-\section{The Electron}
-For the electron, an extensive study of eEDM in {\gthdm} can be found in the 2018~\cite{FHS2018EWBGandEDM} and 2020~\cite{FHS2020EDMCancellation} papers of Fuyuto, Hou, and Senaha.
-Our investigation on eEDM is essentially an extension of the 2020 paper to a larger parameter space.
+For the muon, the leading experimental bound on muon EDM ({\muedm}) is by the Muon g-2 experiment at Brookhaven National Laboratory (BNL)~\cite{BNL2009MuonEDM}, giving us the bound
+\(|d_{\mu}| < \num{1.8e-19} \ecm\).
+There is also an indirect limit derived from the ACME 2018 {\eedm} bound, which is claimed~\cite{Pospelov2022MuonEDM} to be \(\sim \num{2e-20} \ecm\).
+There are several experiments that aim to search for {\muedm} in the forseeable future.
+The Fermilab (FNAL) Muon g-2~\cite{Fermilab2016MuonEDM} and J-PARC Muon g-2/EDM~\cite{JPARC2019MuonEDM} experiments project their sensitivities at \(\sim \num{e-21} \ecm\),
+while another experiment at PSI~\cite{PSI2021MuonEDM} aims to improve by an additional order of magnitude,
+reaching \(\sim \num{6e-23} \ecm\).
+With these experiments on the horizon, the prospects for {\muedm} in the coming decade do look rather promising.
+
+As for the tau, tau EDM ({\tauedm}) measurements are far less precise given the short lifetime of the tau lepton.
+The most prominent method to derive the limits are from spin-momentum correlations of final state decay products in the \(e^{+}e^{-} \to \gamma^{*} \to \tau^{+}\tau_{-}\) process,
+where {\tauedm} enters the matrix element of the \(\tau\tau\gamma \) vertex.
+The current best limit is by Belle~\cite{Belle2003TauEDM}, with the real and imaginary parts given seperately, both at \(\sim \num{e-17} \).
+Just as with {\muedm}, an indirect limit can be derived from {\eedm} as per~\cite{Pospelov2022MuonEDM} (not listed here).
+Belle II~\cite{BelleII2019Projections} projects an order-of-magnitude improvement to the Belle bounds.
+On the other hand, some improvement is possible by studying ``optimal'' observables, as per~\cite{Bernreuther2021TauEDM}.
+
+If we assume that new physics (NP) contributions scale with \(m_{l} \) (such as models~\cite{DAmbrosioEtAl2002MFV} with minimal flavor violation (MFV)),
+we can make back-of-the-envelope estimates of the ``equivalent precision'' bounds for {\muedm} and {\tauedm} from the current {\eedm} bound.
+Applying the scaling \(|d_{\mu(\tau)}/d_{e}| \simeq m_{\mu(\tau)}/m_{e}\) to the JILA bound in~\tabref{leptonEDMExperiments}, 
+we can obtain the equivalent precision bounds \(|d_{\mu}| \sim \num{8.5e-28} \ecm\) and \(|d_{\tau}| \sim \num{1.4e-26} \ecm\), respectively.
+Referring back to \tabref{leptonEDMExperiments}, the projected sensitivities for {\muedm} fall just shy of 5 orders of magnitude short,
+while those for {\tauedm} are still st least 7 orders of magnitude away.
+However, if the flavor dynamics are quite different, this \(m_{l} \) scaling might not hold~\cite{HillerEtAl2010MuonEDMfromFlavor, CrivellinEtAl2018MuonEDMg-2},
+possibly leading to larger \(d_{\mu} \) and \(d_{\tau} \). 
+In~\secref{muEDM}~and~\secref{tauEDM} we shall see how {\gthdm} gives rise to larger \(d_{\mu} \) and \(d_{\tau} \), respectively,
+while still maintaining the possibility of yielding a smaller value should the bounds close in.
+
+\section{The Electron}\label{sec:eEDM}
+For the electron, an extensive study of {\eedm} in {\gthdm} can be found in the 2018~\cite{FHS2018EWBGandEDM} and 2020~\cite{FHS2020EDMCancellation} papers of Fuyuto, Hou, and Senaha.
+Our investigation on {\eedm} is essentially an extension of the 2020 paper to a larger parameter space.
 
 \subsection{Cancellation Mechanism}
 As mentioned in [CROSSREF], one big motivation for {\gthdm} as a viable model is the fact that \(\order{1} \rho_{tt}\) can drive baryogenesis through \(\lambda_{t}\Im\rho_{tt} \).
@@ -47,7 +85,7 @@ In an attempt to address this issue, Fuyuto, Hou, and Senaha proposed a ``cancel
 \begin{equation}\label{eq:ansatz}
     \Re\rho_{ee} = -r\frac{\lambda_{e}}{\lambda_{t}}\Re\rho_{tt} \text{, } \quad \Im\rho_{ee} = +r\frac{\lambda_{e}}{\lambda_{t}}\Im\rho_{tt},
   \end{equation}
-which facilitates a ``cancellation mechanism'' that allows for small values of eEDM while keeping a \textit{sizeable} \(\rho_{tt} \).
+which facilitates a ``cancellation mechanism'' that allows for small values of {\eedm} while keeping a \textit{sizeable} \(\rho_{tt} \).
 The ``cancellation'' in this mechanism arises from the opposite signs of the \(W \)-loop and the top-loop in the Barr-Zee diagrams.
 Referring to~\eqnref{BarrZee-phiG-toploop}~and~\eqnref{BarrZee-cHW-Wloop}, we can see that
 \begin{align}
@@ -64,9 +102,9 @@ Rearranging~\eqnref{exact-cancellation} thus gives us the form of the cancellati
 This ansatz signifies two key points.
 First, it gives a flavor hierarchy \(|\rho_{ee}|/|\rho_{tt}|\sim\lambda_{e}/\lambda_{t} \) that reflects SM.
 Second, it represents a phase lock between \(\rho_{ee} \) and \(\rho_{tt} \).
-With our working assumption of Higgs masses, this ansatz results in a ``dip'' in eEDM around the \(r \) value of \(\sim 0.7 \),
+With our working assumption of Higgs masses, this ansatz results in a ``dip'' in {\eedm} around the \(r \) value of \(\sim 0.7 \),
 which is when complete cancellation occurs between the \(W \)-loop and the top-loop.
-This provides a mechanism for the eEDM in {\gthdm} to be small and evade the experimental bounds while not directly modifying \(\rho_{tt} \).
+This provides a mechanism for the {\eedm} in {\gthdm} to be small and evade the experimental bounds while not directly modifying \(\rho_{tt} \).
 
 \subsection{Enlarging the Parameter Space}
 When revisiting their study, we found the assumptions on the value of \(\rho_{tt} \) to be quite ``conservative'', setting \(\Re\rho_{tt} = \Im\rho_{tt} = -0.1 \) (which equates to \(|\rho_{tt}| = 0.1\sqrt{2} \approx 0.14\)).
@@ -88,7 +126,7 @@ Nevertheless, the trend we wish to describe is not affected by such.
 From our results, it can be seen that as \(|\rho_{tt}| \) increases, the allowed window of the proportionality parameter \(r \) shrinks, yet there is still a decent range of acceptable probable values.
 \(\Re\rho_{tt} = \Im\rho_{tt} = -0.1 \) was indeed a conservative representative value, and \(\Re\rho_{tt} = \Im\rho_{tt} = -0.3 \) may still be a viable option in the baryogenesis parameter space.
 
-\section{The Muon}
+\section{The Muon}\label{sec:muEDM}
 After the electron, we move on to its slightly heavier cousin, the muon. 
 Since the bound on the muon is not as strong, one does not need to resort to the cancellation ansatz immediately.
 Instead, we perform a scan of the \(\rho_{tt} \) parameter space for a representative \(\rho_{\mu\mu} \) value, and see how it affects the \(\mu \)EDM.
@@ -100,7 +138,7 @@ Our predicted values for \(\mu \)EDM are still two to three orders of magnitude 
 Once the bounds close in, it may also be fruitful to consider the ``cancellation ansatz'' on the muon as well, especially since the leptons share a extra Yukawa matrix \(\rho^{l} \),
 which makes it more likely that the \(\rho_{ll} \) might exhibit similar relationships with \(\rho_{tt} \).
 
-\section{The Tau Lepton}
+\section{The Tau Lepton}\label{sec:tauEDM}
 Lastly, we analyze the heaviest lepton, the tau.
 On the experimental front, the precision of tau EDM (\(\tau \)EDM) measurements are still pretty low.
 We perform the same calculations as the muon, with \(\rho_{\mu\mu} = i\lambda_{\mu} \) replaced by \(\rho_{\tau\tau} = i\lambda_{\tau} \).

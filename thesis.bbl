@@ -194,6 +194,12 @@ V.~Andreev \emph{et~al.}, ``Improved limit on the electric dipole moment of the
   electron,'' \emph{Nature}, vol. 562, no. 7727, pp. 355--+, 2018.
 \BIBentrySTDinterwordspacing
 
+\bibitem{BNL2009MuonEDM}
+\BIBentryALTinterwordspacing
+G.~W. Bennett \emph{et~al.}, ``Improved limit on the muon electric dipole
+  moment,'' \emph{Physical Review D}, vol.~80, no.~5, 2009.
+\BIBentrySTDinterwordspacing
+
 \bibitem{Fermilab2016MuonEDM}
 \BIBentryALTinterwordspacing
 R.~Chislett, ``The muon edm in the g-2 experiment at fermilab,'' \emph{EPJ Web
@@ -233,6 +239,26 @@ E.~Kou \emph{et~al.}, ``The belle ii physics book,'' \emph{Progress of
 \BIBentryALTinterwordspacing
 W.~Bernreuther, L.~Chen, and O.~Nachtmann, ``Electric dipole moment of the tau
   lepton revisited,'' \emph{Physical Review D}, vol. 103, no.~9, 2021.
+\BIBentrySTDinterwordspacing
+
+\bibitem{DAmbrosioEtAl2002MFV}
+\BIBentryALTinterwordspacing
+G.~D'Ambrosio, G.~F. Giudice, G.~Isidori, and A.~Strumia, ``Minimal flavour
+  violation: an effective field theory approach,'' \emph{Nuclear Physics B},
+  vol. 645, no. 1-2, pp. 155--187, 2002.
+\BIBentrySTDinterwordspacing
+
+\bibitem{HillerEtAl2010MuonEDMfromFlavor}
+\BIBentryALTinterwordspacing
+G.~Hiller, K.~Huitu, T.~Rüppell, and J.~Laamanen, ``Large muon electric dipole
+  moment from flavor?'' \emph{Physical Review D}, vol.~82, no.~9, 2010.
+\BIBentrySTDinterwordspacing
+
+\bibitem{CrivellinEtAl2018MuonEDMg-2}
+\BIBentryALTinterwordspacing
+A.~Crivellin, M.~Hoferichter, and P.~Schmidt-Wellenburg, ``Combined
+  explanations of ( -2) and implications for a large muon edm,'' \emph{Physical
+  Review D}, vol.~98, no.~11, 2018.
 \BIBentrySTDinterwordspacing
 
 \bibitem{FHS2018EWBGandEDM}
