@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Snowmass2022EDM}
+R.~Alarcon \emph{et~al.}, ``Electric dipole moments and the search for new
+  physics,'' \emph{arXiv preprint arXiv:2203.08103}, 2022.
+
 \bibitem{PDG2022}
 \BIBentryALTinterwordspacing
 R.~L. Workman \emph{et~al.}, ``Review of particle physics,'' \emph{Progress of
@@ -280,6 +284,37 @@ K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
 W.~S. Hou, G.~Kumar, and S.~Teunissen, ``Discovery prospects for electron and
   neutron electric dipole moments in the general two higgs doublet model,''
   \emph{Physical Review D}, vol. 109, no.~1, 2024.
+\BIBentrySTDinterwordspacing
+
+\bibitem{PSI2020nEDM}
+\BIBentryALTinterwordspacing
+C.~Abel \emph{et~al.}, ``Measurement of the permanent electric dipole moment of
+  the neutron,'' \emph{Physical Review Letters}, vol. 124, no.~8, 2020.
+\BIBentrySTDinterwordspacing
+
+\bibitem{PSI2021n2EDM}
+\BIBentryALTinterwordspacing
+N.~J. Ayres \emph{et~al.}, ``The design of the n2edm experiment nedm
+  collaboration,'' \emph{European Physical Journal C}, vol.~81, no.~6, 2021.
+\BIBentrySTDinterwordspacing
+
+\bibitem{ORNLnEDM}
+\BIBentryALTinterwordspacing
+``Oak ridge national laboratory nedm web page.'' [Online]. Available:
+  \url{https://nedm.ornl.gov/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Hisano2014nEDM}
+\BIBentryALTinterwordspacing
+T.~Abe, J.~Hisano, T.~Kitahara, and K.~Tobioka, ``Gauge invariant barr-zee type
+  contributions to fermionic edms in the two-higgs doublet models,''
+  \emph{Journal of High Energy Physics}, no.~1, 2014.
+\BIBentrySTDinterwordspacing
+
+\bibitem{PospelovRitz2005EDMs}
+\BIBentryALTinterwordspacing
+M.~Pospelov and A.~Ritz, ``Electric dipole moments as probes of new physics,''
+  \emph{Annals of Physics}, vol. 318, no.~1, pp. 119--169, 2005.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Maksymyk1994ObliqueParam2HDM}

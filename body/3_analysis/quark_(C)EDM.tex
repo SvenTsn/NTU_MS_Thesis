@@ -2,41 +2,62 @@
 \label{ch:quark(C)EDM}
 
 After the analysis for leptons, we turn our gaze towards EDMs involving quarks. 
-As mentioned in the theory section, there are additional chromo-EDM and Weinberg term contributions to take into account that arise from the fact that quarks interact via QCD.
 However, since quarks are always confined as hadrons, it is extremely difficult, if not outright impossible, 
 to directly probe the EDMs of individual quarks, given the state of current technology and our understanding of QCD.
 A quick literature~\cite{PDG2022} review shows that there are indeed no direct experimental observations for the EDMs of all the quarks lighter than the top quark.
 We comment on the situation of the top quark in \secref{top-cedm}. 
 It is natural, under these circumstances, to shift our attention towards hadron EDMs, and utilize the EDM of hadrons to observe the effect of the EDMs of individual quarks.
-The prime candidate in this case would be the neutron EDM (nEDM).
+The prime candidate in this case would be the neutron EDM (\nedm).
 
 \section{The Neutron}
+\subsection{Experimental Overview}
 Neutron EDM measurements have been in the experimental realm for quite some time already.
-The most recent results are given by PSI~\cite{PSI-nEDM} in 2020, setting the bound at \(|d_{n}| < 1.8 \times 10^{-26} \) \(\ecm \).
-A recent report from the Snowmass conference~\cite{Snow22} has shed some light on the past, present, and future of nEDM experiments.
-% Figure: Snowmass nEDM experimental status
-As can be seen from \figref{snowmass} taken from said report~\cite{Snow22}, progress on the nEDM front has stagnated for a decade or so,
-with the precision plateauing at \(\sim 10^{-26} \) \(\ecm \).
-However, projects to improve the sensitivity are already in the works, so it is still worth to explore the nEDM parameter space.
+The most recent results are given by PSI~\cite{PSI2020nEDM} in 2020, setting the bound at \(|d_{n}| < \num{1.8e-26} \ecm\).
+We can use the same back-of-the-envelope mass-scaling estimate that we did for the leptons to estimate the ``equivalent precision'' bound for {\nedm} from the {\eedm} bound.
+Since \(m_{u} \sim m_{e} \) and \(m_{d} \) is barely 10 times greater than \(m_{e} \), 
+we can place the estimated {\nedm} value at
+ \(\sim \num{e-29} \ecm\).
+This places the current {\nedm} bound  3-4 orders of magnitude away.
 
-We use the recent formula~\cite{Hisano15}
+Even though the {\nedm} experimental precision is not as good as that of the {\eedm} experiments,
+just looking at the numbers does invoke a \emph{mild} sense of optimism,
+especially since this is a \emph{very} naive estimate,
+as the dynamics involved in the neutron is much more complicated.
+One can reasonably expect the value to be suitably larger.
+Unfortunately, that optimistic feeling is quickly extinguished when we take a look at the progress over the past years.
+We cite here \figref{snowmass}, taken from the Snowmass conference report~\cite{Snowmass2022EDM}, as a good visual description of {\nedm} experimental progress.
+% Figure: Snowmass nEDM experimental status
+As can be seen from said figure, progress on the {\nedm} front has stagnated for a decade or so,
+with the precision plateauing at \(\sim 10^{-26} \ecm\).
+However, we see a silver lining in the report: projects to improve the sensitivity, based on ultra-cold-neutron (UCN) methods, are already in the works.
+There is a follow-up project at PSI, named n2EDM~\cite{PSI2021n2EDM}, 
+which plans to reach a sensitivity of \(\sim \num{e-27} \ecm \) within a decade.
+Furthermore, there is a new experiment under construction at the Spallation Neutron Source~\cite{ORNLnEDM} at Oak Ridge National Laboratory (ORNL),
+which projects a precision down to \(\num{e-28} \ecm \).
+Nevertheless, it is still worth to explore the {\nedm} parameter space, 
+which is what we did~\cite{HKT2024eEDMnEDM}.
+
+\subsection{{\gthdm} Calculations}
+As mentioned in the theory section, there are additional chromo-EDM and Weinberg term contributions to take into account that arise from the fact that quarks interact via QCD.
+To evaluate the combined combination of these contributions to {\nedm}, we use the more recent formula~\cite{Hisano2014nEDM}
 \begin{equation}
   d_n = - 0.20\,d_u + 0.78\,d_d + e\,(0.29\,\tilde d_u + 0.59 \tilde d_d) + e\,23\;{\rm MeV}\,C_W
 \end{equation}
-to estimate the nEDM.
-We evaluate the contributions to \(\tilde{d}_{u, d} \) and \(C_{W} \) in {\gthdm} by following Refs.~\cite{Abe14} and~\cite{JungPich14}, with discussion on theoretical uncertainties found in Ref.~\cite{KanetaEtAl23}.
-We present the results for nEDM in \figref{nEDM-fixed},
-as well as combined results for eEDM and nEDM in the range \(r \in [0.6, 0.8] \) in \figref{nEDM-eEDM},
-with the ``extended'' ansatz~\eqnref{ansatz} applied.
+instead of the widely cited classic review of Pospelov and Ritz~\cite{PospelovRitz2005EDMs}.
+We present the {\gthdm}-with-extended-ansatz~\eqnref{ansatz}-applied calculation results for {\nedm} in \figref{nEDM-fixed},
+as well as combined results for {\eedm} and {\nedm} in the range \(r \in [0.6, 0.8] \) in \figref{nEDM-eEDM}.
 % Figure: nEDM results
-Interestingly, our predictions for nEDM are not too far below the current experimental bound.
+Interestingly, our predictions for {\nedm} are not too far below the current experimental bound.
 We see that, even for \(|\rho_{tt}| = 0.3\sqrt{2} \approx 0.42\), one can still survive the current PSI bound.
-In the combined plot, the eEDM cancellation mechanism from the previous section at \(r \approx 0.7 \) clearly illustrated.
-The interplay of the nEDM and the eEDM in \figref{nEDM-eEDM} shows that our predictions are of notable significance in both precision observables.
-The follow-up project at PSI, named n2EDM~\cite{n2EDM21}, plans to reach a sensitivity of \(\sim 10^{-27} \) \(e\,\mathrm{cm} \) within a decade, which covers the range illustrated in \figref{nEDM-fixed}.
+In the combined plot, the {\eedm} cancellation mechanism from the previous section at \(r \approx 0.7 \) is clearly illustrated.
+The interplay of the {\nedm} and the {\eedm} in \figref{nEDM-eEDM} shows that our predictions are of notable significance in both precision observables.
+The projected \(\sim \num{e-27} \ecm \) sensitivity of n2EDM at PSI covers the range illustrated in \figref{nEDM-fixed},
+putting stress on our model.
+Fortunately, there is still a possibility of lowering the predicted {\nedm} value of our model 
+should the new experimental bounds indeed close in.
 
-We have been utilizing the ``extended'' cancellation ansatz~\eqnref{ansatz} in our above calculations and analyses, but we have to stress that,
-as described before, it is merely a convenient way to numerically illustrate the \textit{flavor hierarchy} of the {\gthdm}.
+So far, we have been utilizing the ``extended'' cancellation ansatz~\eqnref{ansatz} in our above calculations and analyses.
+However, we have to reiterate that it is merely a convenient way to numerically illustrate the \textit{flavor hierarchy} of the {\gthdm}.
 A closer examination of the ``extended'' ansatz reveals a logical flaw: 
 since \(\rho_{uu} \) and \(\rho_{tt} \) are in the same \(\rho \) matrix, and the ansatz obviously does not hold for \(\rho_{tt} \) itself, 
 there is no reason to expect it to hold for \(\rho_{uu} \).
@@ -46,18 +67,19 @@ Hence, we relax the ansatz for \(\rho_{uu} \), and explore the range of \(\order
   |\rho_{uu}| \in [0.3\lambda_u, 3\lambda_u], \quad \arg\rho_{uu} \in [-\pi, \pi]
 \end{equation}
 while keeping the other \(\rho_{ff} \)s intact, i.e. still following the ansatz.
-We present our results in \figref{nEDM-varied}.
+We present our results for said variation in \figref{nEDM-varied}.
 % Figure: nEDM varying rho_uu
 The different colors of the points represent different values of \(\arg\rho_{uu} \), and an interesting pattern can be seen among them.
 The red points have negative \(\arg\rho_{uu} \), which is the same sign as \(\rho_{tt} \); 
-the nEDM of these points are larger, but stay mostly below the PSI bound.
+the {\nedm} of these points are larger, but stay mostly below the PSI bound.
 On the other hand, the blue points have \textit{positive} \(\arg\rho_{uu} \), which is the \textit{opposite} sign as \(\rho_{tt} \); 
-remarkably, the value of nEDM of these points drop significantly, reaching as low as \(10^{-28} \) \(e\,\mathrm{cm} \) or lower, 
-evading even the projected sensitivity of n2EDM at PSI!
-This phenomenon in \figref{nEDM-varied} illustrates a \textit{natural} cancellation mechanism present within the dynamics of nEDM,
+remarkably, the value of {\nedm} of these points drop significantly, reaching as low as \(\num{e-28} \ecm \) or lower, 
+evading even the projected sensitivity of n2EDM!
+This phenomenon in \figref{nEDM-varied} illustrates a \textit{natural} cancellation mechanism present within the dynamics of {\nedm},
 arising from the phase difference of \(\rho_{uu} \) and the other \(\rho_{ff} \).
-Even though this mechanism can evade the projected n2EDM sensitivity, it can still be probed by future experiments, such as the Spallation Neutron Source (SNS) at Oak Ridge National Laboratory (ORNL)~\cite{SNS-ORNL}, which can reach sensitivities down to \(\sim 10^{-28} \) \(e\,\mathrm{cm} \).
-This experiment may take more than a decade to come to fruition, but it almost fully covers our projected range, since the blue dots are still mostly concentrated above \(10^{-28} \) \(e\,\mathrm{cm} \).
+Even though this mechanism can evade the projected n2EDM sensitivity, 
+it can still be probed by the SNS at ORNL, with its down to \(\sim \num{e-28} \ecm \) projected sensitivity.
+This experiment may take more than a decade to come to fruition, but it almost fully covers our projected range, since the blue dots are still mostly concentrated above \(\num{e-28} \ecm \).
 
 \clearpage
 \input{body/3_analysis/quark_(C)EDM_figures.tex}
