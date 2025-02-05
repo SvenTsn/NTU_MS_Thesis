@@ -1,7 +1,8 @@
 % FeynmannDiagrams.t9 -- generated from FeynmannDiagrams.mp
-\fmfL(104.99959,39.37329,b){$t$}%
-\fmfL(24.00128,5.19617,lb){$f$}%
-\fmfL(185.99872,5.19617,rb){$f$}%
-\fmfL(57.27887,25.76938,rb){$\phi =h,H,A$}%
-\fmfL(152.72073,25.76938,lb){$G=\gamma ,Z$}%
-\fmfL(194.99872,140,l){$g$}%
+\fmfL(104.99959,39.37329,b){$H^{\pm }$}%
+\fmfL(24.00128,5.19617,lb){$f^{\uparrow \downarrow }$}%
+\fmfL(185.99872,5.19617,rb){$f^{\uparrow \downarrow }$}%
+\fmfL(57.27887,25.76938,rb){$H^{\pm }$}%
+\fmfL(105.00002,6,b){$f^{\downarrow \uparrow }$}%
+\fmfL(152.72073,25.76938,lb){$W^{\pm }$}%
+\fmfL(194.99872,140,l){$\gamma $}%

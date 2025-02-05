@@ -1,0 +1,20 @@
+\begin{figure}[p]
+    \centering
+    \begin{adjustbox}{center}
+        \begin{fmfgraph*}(200, 125)
+            \fmfleft{i1,i2}
+            \fmfright{o1,o2}
+            \fmf{fermion}{o1,v2,v1,i1}
+            \fmf{dashes}{i2,v1}
+            \fmf{dashes}{o2,v2}
+            \fmffreeze
+            \fmfi{phantom,label=$c_{R},,t_{R}$,label.side=right}{vpath(__v1,__v2)}
+            \fmfiv{label=$v_{a}(x)$,label.angle=120}{vloc(__i2)}
+            \fmfiv{label=$v_{b}(y)$,label.angle=60}{vloc(__o2)}
+            \fmfiv{label=$t_{L}$,label.angle=-120}{vloc(__i1)}
+            \fmfiv{label=$t_{L}$,label.angle=-60}{vloc(__o1)}
+        \end{fmfgraph*}
+    \end{adjustbox}
+    \caption{A dominant CPV process relevant for baryon asymmetry, with Higgs bubble wall denoted \(v_{a}(x) \) and \(v_{b}(y) \).}
+	\label{fig:BAU-CPV_process}
+\end{figure}

@@ -62,6 +62,19 @@ M.~S. Turner, ``Big band baryosynthesis and grand unification,'' \emph{AIP
   Conference Proceedings}, vol.~72, no.~1, pp. 224--243, 1981.
 \BIBentrySTDinterwordspacing
 
+\bibitem{Kuzmin1985EWBG}
+\BIBentryALTinterwordspacing
+V.~A. Kuzmin, V.~A. Rubakov, and M.~E. Shaposhnikov, ``On anomalous electroweak
+  baryon-number non-conservation in the early universe,'' \emph{Physics Letters
+  B}, vol. 155, no. 1-2, pp. 36--42, 1985.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Cohen1990EWBG}
+\BIBentryALTinterwordspacing
+A.~G. Cohen, D.~B. Kaplan, and A.~E. Nelson, ``Weak scale baryogenesis,''
+  \emph{Physics Letters B}, vol. 245, no. 3-4, pp. 561--564, 1990.
+\BIBentrySTDinterwordspacing
+
 \bibitem{PenziasWilson1965CMB}
 \BIBentryALTinterwordspacing
 A.~A. Penzias and R.~W. Wilson, ``A measurement of excess antenna temperature
@@ -89,11 +102,11 @@ G.~R. Farrar and M.~E. Shaposhnikov, ``Baryon asymmetry of the universe in the
   pp. 2833--2836, 1993.
 \BIBentrySTDinterwordspacing
 
-\bibitem{Kuzmin1985EWBG}
+\bibitem{Bochkarev1990EWBG2HDM}
 \BIBentryALTinterwordspacing
-V.~A. Kuzmin, V.~A. Rubakov, and M.~E. Shaposhnikov, ``On anomalous electroweak
-  baryon-number non-conservation in the early universe,'' \emph{Physics Letters
-  B}, vol. 155, no. 1-2, pp. 36--42, 1985.
+A.~I. Bochkarev, S.~V. Kuzmin, and M.~E. Shaposhnikov, ``Electroweak
+  baryogenesis and the higgs boson mass problem,'' \emph{Physics Letters B},
+  vol. 244, no.~2, pp. 275--278, 1990.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Branco20122HDMs}
@@ -101,6 +114,66 @@ V.~A. Kuzmin, V.~A. Rubakov, and M.~E. Shaposhnikov, ``On anomalous electroweak
 G.~C. Branco \emph{et~al.}, ``Theory and phenomenology of two-higgs-doublet
   models,'' \emph{Physics Reports-Review Section of Physics Letters}, vol. 516,
   no. 1-2, pp. 1--102, 2012.
+\BIBentrySTDinterwordspacing
+
+\bibitem{FHS2018EWBGandEDM}
+\BIBentryALTinterwordspacing
+K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
+  top yukawa couplings,'' \emph{Physics Letters B}, vol. 776, pp. 402--406,
+  2018.
+\BIBentrySTDinterwordspacing
+
+\bibitem{tHooft1976BaryonNumAnomaly}
+\BIBentryALTinterwordspacing
+G.~'t~HOOFT, ``Computation of quantum effects due to a 4-dimensional
+  pseudoparticle,'' \emph{Physical Review D}, vol.~14, no.~12, pp. 3432--3450,
+  1976.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Klinkhamer1984Sphaleron}
+\BIBentryALTinterwordspacing
+F.~R. Klinkhamer and N.~S. Manton, ``A saddle-point solution in the
+  weinberg-salam theory,'' \emph{Physical Review D}, vol.~30, no.~10, pp.
+  2212--2220, 1984.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Farrar1993MSMBAU}
+\BIBentryALTinterwordspacing
+G.~R. Farrar and M.~E. Shaposhnikov, ``Baryon asymmetry of the universe in the
+  minimal standard model,'' \emph{Physical Review Letters}, vol.~70, no.~19,
+  pp. 2833--2836, 1993.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Kanemura2005EWBGHiggs}
+\BIBentryALTinterwordspacing
+S.~Kanemura, Y.~Okada, and E.~Senaha, ``Electroweak baryogenesis and quantum
+  corrections to the triple higgs boson coupling,'' \emph{Physics Letters B},
+  vol. 606, no. 3-4, pp. 361--366, 2005.
+\BIBentrySTDinterwordspacing
+
+\bibitem{HuetNelson1996EWBG}
+\BIBentryALTinterwordspacing
+P.~Huet and A.~E. Nelson, ``Electroweak baryogenesis in supersymmetric
+  models,'' \emph{Physical Review D}, vol.~53, no.~8, pp. 4578--4597, 1996.
+\BIBentrySTDinterwordspacing
+
+\bibitem{ClineKainulainen2000EWBG}
+\BIBentryALTinterwordspacing
+J.~M. Cline and K.~Kainulainen, ``New source for electroweak baryogenesis in
+  the minimal supersymmetric standard model,'' \emph{Physical Review Letters},
+  vol.~85, no.~26, pp. 5519--5522, 2000.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Planck2014Yobs}
+\BIBentryALTinterwordspacing
+P.~A.~R. Ade \emph{et~al.}, ``2013 results. xvi. cosmological parameters,''
+  \emph{Astronomy \& Astrophysics}, vol. 571, 2014.
+\BIBentrySTDinterwordspacing
+
+\bibitem{CFS2016EWBG}
+\BIBentryALTinterwordspacing
+C.~W. Chiang, K.~Fuyuto, and E.~Senaha, ``Electroweak baryogenesis with lepton
+  flavor violation,'' \emph{Physics Letters B}, vol. 762, pp. 315--320, 2016.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Griffiths2013Electrodynamics}
@@ -124,6 +197,13 @@ P.~A.~M. Dirac, ``The quantum theory of the electron,'' \emph{Proceedings of
 \BIBentryALTinterwordspacing
 E.~E. Salpeter, ``Some atomic effects of an electronic electric dipole
   moment,'' \emph{Physical Review}, vol. 112, no.~5, pp. 1642--1648, 1958.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Chupp2019EDM}
+\BIBentryALTinterwordspacing
+T.~E. Chupp, P.~Fierlinger, M.~J. Ramsey-Musolf, and J.~T. Singh, ``Electric
+  dipole moments of atoms, molecules, nuclei, and particles,'' \emph{Reviews of
+  Modern Physics}, vol.~91, no.~1, 2019.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Nowakowski2005FormFactor}
@@ -265,18 +345,11 @@ A.~Crivellin, M.~Hoferichter, and P.~Schmidt-Wellenburg, ``Combined
   Review D}, vol.~98, no.~11, 2018.
 \BIBentrySTDinterwordspacing
 
-\bibitem{FHS2018EWBGandEDM}
-\BIBentryALTinterwordspacing
-K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
-  top yukawa couplings,'' \emph{Physics Letters B}, vol. 776, pp. 402--406,
-  2018.
-\BIBentrySTDinterwordspacing
-
 \bibitem{FHS2020EDMCancellation}
 \BIBentryALTinterwordspacing
-------, ``Cancellation mechanism for the electron electric dipole moment
-  connected with the baryon asymmetry of the universe,'' \emph{Physical Review
-  D}, vol. 101, no.~1, 2020.
+K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Cancellation mechanism for the electron
+  electric dipole moment connected with the baryon asymmetry of the universe,''
+  \emph{Physical Review D}, vol. 101, no.~1, 2020.
 \BIBentrySTDinterwordspacing
 
 \bibitem{HKT2024eEDMnEDM}
@@ -315,6 +388,18 @@ T.~Abe, J.~Hisano, T.~Kitahara, and K.~Tobioka, ``Gauge invariant barr-zee type
 \BIBentryALTinterwordspacing
 M.~Pospelov and A.~Ritz, ``Electric dipole moments as probes of new physics,''
   \emph{Annals of Physics}, vol. 318, no.~1, pp. 119--169, 2005.
+\BIBentrySTDinterwordspacing
+
+\bibitem{CLEO1987BBbarMixing}
+\BIBentryALTinterwordspacing
+A.~Bean \emph{et~al.}, ``Limits on b0bbar0 mixing and taub0 taub+,''
+  \emph{Physical Review Letters}, vol.~58, no.~3, pp. 183--186, 1987.
+\BIBentrySTDinterwordspacing
+
+\bibitem{ARGUS1987BBbarMixing}
+\BIBentryALTinterwordspacing
+H.~Albrecht \emph{et~al.}, ``Observation of b0-b-bar-0 mixing,'' \emph{Physics
+  Letters B}, vol. 192, no. 1-2, pp. 245--252, 1987.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Maksymyk1994ObliqueParam2HDM}

@@ -1,5 +1,6 @@
 % FeynmannDiagrams.t1 -- generated from FeynmannDiagrams.mp
-\fmfL(33.00183,5.19617,lb){$f$}%
-\fmfL(266.99817,5.19617,rb){$f$}%
-\fmfL(275.99817,125,l){$\gamma $}%
-\fmfL(150,6,b){$\phi $}%
+\fmfL(99.99992,56.49991,t){$c_{R},t_{R}$}%
+\fmfL(17.00122,130.19617,rb){$v_{a}(x)$}%
+\fmfL(182.99878,130.19617,lb){$v_{b}(y)$}%
+\fmfL(17.00122,-5.19617,rt){$t_{L}$}%
+\fmfL(182.99878,-5.19617,lt){$t_{L}$}%
