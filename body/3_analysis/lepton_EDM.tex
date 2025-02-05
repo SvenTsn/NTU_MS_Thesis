@@ -12,7 +12,7 @@ In the following sections of this chapter, we will first give a brief overview o
 then present our theoretical predictions of the EDMs of the electron, muon, and tau respectively.
 
 \section{Experimental Overview}
-A brief overview of current experimental bounds and projected future experimental sensitivity is given in \tabref{leptonEDMExperiments}.
+A brief overview of current experimental bounds and projected future experimental sensitivity is given in \tabref{tab:leptonEDMExperiments}.
 \begin{table}[thp]
     \centering
     \begin{adjustbox}{center}
@@ -41,7 +41,7 @@ As can be seen in the table, the experimental development of electron EDM ({\eed
 Just earlier in 2023, JILA~\cite{JILA2023eEDM} has surpassed the previous bound from ACME~\cite{ACME2018eEDM} and pushed the precision of {\eedm} down to \(|d_{e}| < \num{4.1e-30} \ecm\) .
 It is noteworthy to point out that these {\eedm} experiments are relatively small in scale, ``tabletop experiments'' even when compared to behemoths like the LHC, which makes the extreme precision achieved all the more impressive.
 The smallness of {\eedm}, courtesy of this precision, has put significant pressure on the theoretical side of baryogenesis CPV parameter spaces.
-In~\secref{eEDM} we shall establish in {\gthdm} a way to maintain adequate baryogenesis efficiency while evading the experimental {\eedm} bounds.
+In~\secref{sec:eEDM} we shall establish in {\gthdm} a way to maintain adequate baryogenesis efficiency while evading the experimental {\eedm} bounds.
 
 For the muon, the leading experimental bound on muon EDM ({\muedm}) is by the Muon g-2 experiment at Brookhaven National Laboratory (BNL)~\cite{BNL2009MuonEDM}, giving us the bound
 \(|d_{\mu}| < \num{1.8e-19} \ecm\).
@@ -62,13 +62,13 @@ On the other hand, some improvement is possible by studying ``optimal'' observab
 
 If we assume that new physics (NP) contributions scale with \(m_{l} \) (such as models~\cite{DAmbrosioEtAl2002MFV} with minimal flavor violation (MFV)),
 we can make back-of-the-envelope estimates of the ``equivalent precision'' bounds for {\muedm} and {\tauedm} from the current {\eedm} bound.
-Applying the scaling \(|d_{\mu(\tau)}/d_{e}| \simeq m_{\mu(\tau)}/m_{e}\) to the JILA bound in~\tabref{leptonEDMExperiments}, 
+Applying the scaling \(|d_{\mu(\tau)}/d_{e}| \simeq m_{\mu(\tau)}/m_{e}\) to the JILA bound in~\tabref{tab:leptonEDMExperiments}, 
 we can obtain the equivalent precision bounds \(|d_{\mu}| \sim \num{8.5e-28} \ecm\) and \(|d_{\tau}| \sim \num{1.4e-26} \ecm\), respectively.
-Referring back to \tabref{leptonEDMExperiments}, the projected sensitivities for {\muedm} fall just shy of 5 orders of magnitude short,
+Referring back to \tabref{tab:leptonEDMExperiments}, the projected sensitivities for {\muedm} fall just shy of 5 orders of magnitude short,
 while those for {\tauedm} are still st least 7 orders of magnitude away.
 However, if the flavor dynamics are quite different, this \(m_{l} \) scaling might not hold~\cite{HillerEtAl2010MuonEDMfromFlavor, CrivellinEtAl2018MuonEDMg-2},
 possibly leading to larger \(d_{\mu} \) and \(d_{\tau} \). 
-In~\secref{muEDM}~and~\secref{tauEDM} we shall see how {\gthdm} gives rise to larger \(d_{\mu} \) and \(d_{\tau} \), respectively,
+In~\secref{sec:muEDM}~and~\secref{sec:tauEDM} we shall see how {\gthdm} gives rise to larger \(d_{\mu} \) and \(d_{\tau} \), respectively,
 while still maintaining the possibility of yielding a smaller value should the bounds close in.
 
 \section{The Electron}\label{sec:eEDM}
@@ -87,7 +87,7 @@ In an attempt to address this issue, Fuyuto, Hou, and Senaha proposed a ``cancel
   \end{equation}
 which facilitates a ``cancellation mechanism'' that allows for small values of {\eedm} while keeping a \textit{sizeable} \(\rho_{tt} \).
 The ``cancellation'' in this mechanism arises from the opposite signs of the \(W \)-loop and the top-loop in the Barr-Zee diagrams.
-Referring to~\eqnref{BarrZee-phiG-toploop}~and~\eqnref{BarrZee-cHW-Wloop}, we can see that
+Referring to~\eqnref{eq:BarrZee-phiG-toploop}~and~\eqnref{eq:BarrZee-cHW-Wloop}, we can see that
 \begin{align}
     (d^{\phi G}_{l})_{t} = -&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(\rho \text{ couplings})(\text{Loop functions}) \\
     (d^{\phi G}_{l})_{W} = +&\frac{e\,m_{l}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}\sum_{G=\gamma,Z}(\rho \text{ couplings})(\text{Loop functions})
@@ -98,7 +98,7 @@ In the case of total cancellation, \((d^{\phi G}_{l})_{t} = -(d^{\phi G}_{l})_{W
     \text{To be added}
 \end{equation}
 which can be factored into a \(\rho \)-dependent part and a loop-function-dependent part \(r \).
-Rearranging~\eqnref{exact-cancellation} thus gives us the form of the cancellation ansatz.
+Rearranging~\eqnref{eq:exact-cancellation} thus gives us the form of the cancellation ansatz.
 This ansatz signifies two key points.
 First, it gives a flavor hierarchy \(|\rho_{ee}|/|\rho_{tt}|\sim\lambda_{e}/\lambda_{t} \) that reflects SM.
 Second, it represents a phase lock between \(\rho_{ee} \) and \(\rho_{tt} \).
@@ -111,14 +111,14 @@ When revisiting their study, we found the assumptions on the value of \(\rho_{tt
 We believe that might be due to \textit{playing it safe} under the pressure of the rapid advancements on the experimental front. 
 In our study~\cite{HKT2024eEDMnEDM}, we \textit{push against the boundary}, and explore a larger range of \(\rho_{tt} \), up to \(\Re\rho_{tt} = \Im\rho_{tt} = -0.3 \) (\(|\rho_{tt}| = 0.3\sqrt{2} \approx 0.42\)). 
 We want to see how big we can keep the parameter space for baryogenesis while still satisfying precision constraints.
-As mentioned before, one of the key points of {\gthdm} is the \textit{flavor hierarchy}, illustrated by the \textit{rule of thumb}~\eqnref{ruleofthumb}.
+As mentioned before, one of the key points of {\gthdm} is the \textit{flavor hierarchy}, illustrated by the \textit{rule of thumb}~\eqnref{eq:ruleofthumb}.
 This ``cancellation ansatz'' happens to capture the idea of such a hierarchy pretty well from a numerical standpoint; 
 so, for the sake of numerical illustration of the flavor hierarchy, we extend the ansatz to all fermion \(\rho_{ff} \)s, except for the top itself:
 \begin{equation}\label{eq:ansatz-extended}
     \Re\rho_{ff} = -r\frac{\lambda_{f}}{\lambda_{t}}\Re\rho_{tt} \text{, } \quad \Im\rho_{ff} = +r\frac{\lambda_{f}}{\lambda_{t}}\Im\rho_{tt}.
 \end{equation}
 We must reiterate that this is merely a move of convenience, and the actual values of the \(\rho_{ff} \)s need not precisely match this ansatz.
-Results are shown in \figref{eEDM}.
+Results are shown in \figref{fig:eEDM}.
 % Figure: eEDM cancellation results
 For the sake of clarity, we have taken a slight liberty in illustrating the range of the purple ``allowed window'' band,
 using the left- and right-most curves instead of the left and right side of a given curve.
@@ -130,7 +130,7 @@ From our results, it can be seen that as \(|\rho_{tt}| \) increases, the allowed
 After the electron, we move on to its slightly heavier cousin, the muon. 
 Since the bound on the muon is not as strong, one does not need to resort to the cancellation ansatz immediately.
 Instead, we perform a scan of the \(\rho_{tt} \) parameter space for a representative \(\rho_{\mu\mu} \) value, and see how it affects the \(\mu \)EDM.
-Results are shown in \figref{muEDM}.
+Results are shown in \figref{fig:muEDM}.
 % Figure: muonEDM results
 We see that there is still a ``cancellation dip'' for the neutral scalar-attached loops, which arises from the opposite signs of the \(W \)-loop and the top-loop.
 The details of said cancellation is exactly the same as that of the electron.
@@ -142,7 +142,7 @@ which makes it more likely that the \(\rho_{ll} \) might exhibit similar relatio
 Lastly, we analyze the heaviest lepton, the tau.
 On the experimental front, the precision of tau EDM (\(\tau \)EDM) measurements are still pretty low.
 We perform the same calculations as the muon, with \(\rho_{\mu\mu} = i\lambda_{\mu} \) replaced by \(\rho_{\tau\tau} = i\lambda_{\tau} \).
-Results are shown in \figref{tauEDM}.
+Results are shown in \figref{fig:tauEDM}.
 % Figure: tauEDM results
 As seen in the figure, our predicted values are still several orders of magnitude below current experimental results.
 Further precision or methodology improvements are required for a more fruitful analysis of \(\tau \)EDM, so we just present our results here without much further comment.
