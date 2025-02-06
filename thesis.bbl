@@ -116,6 +116,39 @@ G.~C. Branco \emph{et~al.}, ``Theory and phenomenology of two-higgs-doublet
   no. 1-2, pp. 1--102, 2012.
 \BIBentrySTDinterwordspacing
 
+\bibitem{DavidsonHaber20052HDM}
+\BIBentryALTinterwordspacing
+S.~Davidson and H.~E. Haber, ``Basis-independent methods for the
+  two-higgs-doublet model (vol 72, pg 035004, 2005),'' \emph{Physical Review
+  D}, vol.~72, no.~9, 2005.
+\BIBentrySTDinterwordspacing
+
+\bibitem{HouModak2020G2HDM}
+\BIBentryALTinterwordspacing
+W.~S. Hou and T.~Modak, ``Production of and in 2hdm: Prospects for discovery at
+  the lhc,'' \emph{Physical Review D}, vol. 101, no.~3, 2020.
+\BIBentrySTDinterwordspacing
+
+\bibitem{ChengSher1987Ansatz}
+\BIBentryALTinterwordspacing
+T.~P. Cheng and M.~Sher, ``Mass-matrix ansatz and flavor nonconservation in
+  models with multiple higgs doublets,'' \emph{Physical Review D}, vol.~35,
+  no.~11, pp. 3484--3491, 1987.
+\BIBentrySTDinterwordspacing
+
+\bibitem{HouKumar2020RuleOfThumb}
+\BIBentryALTinterwordspacing
+W.~S. Hou and G.~Kumar, ``Muon flavor violation in two-higgs-doublet model with
+  extra yukawa couplings,'' \emph{Physical Review D}, vol. 102, no.~11, 2020.
+\BIBentrySTDinterwordspacing
+
+\bibitem{HouKikuchi2018Alignment}
+\BIBentryALTinterwordspacing
+W.-S. Hou and M.~Kikuchi, ``Approximate alignment in two-higgs-doublet model
+  with extra yukawa couplings,'' \emph{Europhysics Letters}, vol. 123, no.~1,
+  p. 11001, 2018.
+\BIBentrySTDinterwordspacing
+
 \bibitem{FHS2018EWBGandEDM}
 \BIBentryALTinterwordspacing
 K.~Fuyuto, W.~S. Hou, and E.~Senaha, ``Electroweak baryogenesis driven by extra
@@ -264,6 +297,19 @@ T.~Abe, J.~Hisano, T.~Kitahara, and K.~Tobioka, ``Gauge invariant barr-zee type
 S.~Weinberg, ``Larger higgs-boson-exchange terms in the neutron electric-dipole
   moment,'' \emph{Physical Review Letters}, vol.~63, no.~21, pp. 2333--2336,
   1989.
+\BIBentrySTDinterwordspacing
+
+\bibitem{JungPich2014CEDM}
+\BIBentryALTinterwordspacing
+M.~Jung and A.~Pich, ``Electric dipole moments in two-higgs-doublet models,''
+  \emph{Journal of High Energy Physics}, no.~4, 2014.
+\BIBentrySTDinterwordspacing
+
+\bibitem{KanetaEtAl2023CEDMUncertainties}
+\BIBentryALTinterwordspacing
+K.~Kaneta, N.~Nagata, K.~A. Olive, M.~Pospelov, and L.~Velasco-Sevilla,
+  ``Quantifying limits on cp violating phases from edms in supersymmetry,''
+  \emph{Journal of High Energy Physics}, no.~3, 2023.
 \BIBentrySTDinterwordspacing
 
 \bibitem{JILA2023eEDM}
@@ -491,6 +537,12 @@ A.~Tumasyan \emph{et~al.}, ``Search for cp violation using $$
   \textrm{t}\overline{\textrm{t}} $$events in the lepton+jets channel in pp
   collisions at $$ \sqrt{s} $$= 13 tev,'' \emph{Journal of High Energy
   Physics}, vol. 2023, no.~6, p.~81, 2023.
+\BIBentrySTDinterwordspacing
+
+\bibitem{Hou2021DecadalMission}
+\BIBentryALTinterwordspacing
+W.~S. Hou, ``Decadal mission for the new physics higgs/flavor era,''
+  \emph{Chinese Journal of Physics}, vol.~77, pp. 432--451, 2022.
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
