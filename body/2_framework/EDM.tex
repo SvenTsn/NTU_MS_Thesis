@@ -218,10 +218,10 @@ The chromo-EDM term is essentially when the vector bosons of the ``ordinary'' ED
 Since only quarks interact with gluons, only the diagram with a fermion loop remains.
 The Weinberg term is relevant because quarks always exist in bound hadronic states.
 That means experimentally we use the EDM of hadrons to infer about quark EDM, and thus the gluon interactions within the hadrons will contribute to the hadron EDM.
-We evaluate the contributions to \(\tilde{d}_{u, d} \) and \(C_{W} \) in {\gthdm} by following Refs.~\cite{Abe14} and~\cite{JungPich14}, with discussion on theoretical uncertainties found in Ref.~\cite{KanetaEtAl23}.
+We evaluate the contributions to \(\tilde{d}_{u, d} \) and \(C_{W} \) in {\gthdm} by following Refs.~\cite{Abe2016EDM} and~\cite{JungPich2014CEDM}, with discussion on theoretical uncertainties found in Ref.~\cite{KanetaEtAl2023CEDMUncertainties}.
 The formulae for calculating the cEDM are
 
-\begin{adjustwidth}{-1.5cm}{-1.5cm}
+\begin{adjustwidth}{-2cm}{-1.5cm}
 	\begin{equation}
 	\tilde{d_{f}} = +\frac{m_{f}}{(4\pi)^{4}}\sqrt{2}G_{F}\sum_{\phi=h,H,A}2g_{s}^{2}\frac{m_{f}^{2}}{m_{\phi}^{2}}
 	\left[\frac{g_{\phi ff}^{A}}{m_{f}/v}\frac{g_{\phi tt}^{V}}{m_{t}/v}\left(-2\frac{m_{\phi}^{2}}{m_{t}^{2}} f\left(\frac{m_{t}^{2}}{m_{\phi}^{2}}\right)\right) 
@@ -229,19 +229,40 @@ The formulae for calculating the cEDM are
 	\end{equation}
 \end{adjustwidth}
 
+\begin{adjustwidth}{-2cm}{-1.5cm}
+	\begin{equation}
+		C_W\left(\mu_{t H}\right)=4 g^3\left(\mu_{t H}\right) \frac{\sqrt{2} G_F}{(4 \pi)^4} \sum_{f=t, b} \sum_{phi=h, H, A} \Re\left(\sqrt{2}y_f^{\phi}/\lambda_{f}\right) \Im\left(\sqrt{2}y_f^{\phi}/\lambda_{f}\right) h\left(m_f, M_{\phi}\right) 
+	\end{equation}
+\end{adjustwidth}
+where
 \begin{equation}
-	C_{W} = 
+	h(m, M)=\frac{m^4}{4} \int_0^1 d x \int_0^1 d u \frac{u^3 x^3(1-x)}{\left[m^2 x(1-u x)+M^2(1-u)(1-x)\right]^2}
 \end{equation}
 
-The contribution of the Weinberg diagram can be evaluated using QCD running.
+The contributions of cEDMs and the Weinberg diagram mix due to QCD running:
 
 \begin{align}
-	\frac{d_{f}(\mu_{h})}{2} &= \\
-	\frac{\tilde{d_{f}}(\mu_{h})}{2} &= \\
-	C_{W}(\mu_{h}) &= 
+	\frac{d_{f}(\mu_{h})}{2} &= \eta^{\kappa_\gamma} \frac{d_q^\gamma\left(\mu_{t H}\right)}{2}+\frac{\gamma_{C \gamma}}{\gamma_\gamma-\gamma_C}\left(\eta^{\kappa_\gamma}-\eta^{\kappa_C}\right) \frac{d_q^C\left(\mu_{t H}\right)}{2} \\
+	\frac{\tilde{d_{f}}(\mu_{h})}{2} &= \eta_{c-h}^{\kappa_C} \eta_{b-c}^{\kappa_C} \eta_{t-b}^{\kappa_C} \frac{d_q^C\left(\mu_{t H}\right)}{2} \\
+	C_{W}(\mu_{h}) &= \eta_{c-h}^{\kappa_W} \eta_{b-c}^{\kappa_W}\left(\eta_{t-b}^{\kappa_W} C_W\left(\mu_{t H}\right)+\eta_{t-b}^{\kappa_C} \frac{g_s^3\left(\mu_b\right)}{8 \pi^2 m_b} \frac{d_b^C\left(\mu_{t H}\right)}{2}\right)
 \end{align}
-
-where constants.
+where \(\eta_{i-j} = \alpha_{s}(\mu_{i})/\alpha_{s}(\mu_{j}) \), \(\eta = \eta_{t-h} \),
+\(\kappa_{i} = \gamma_{i}/2\beta_{0} \), and
+\begin{equation*}
+	\gamma_{q} \equiv 
+	\begin{pmatrix}
+		\gamma_{g} & 0 & 0 \\
+		\gamma_{C_{\gamma,q}} & \gamma_{C} & 0 \\
+		0 & 0 & \gamma_{W}
+	\end{pmatrix}
+	= 
+	\begin{pmatrix}
+		2C_{F} & 0 & 0 \\
+		8C_{F}Q_{q} & 10C_{F}-4N_{C} & 0 \\
+		0 & 0 & N_{C}+2n_{f}
+	\end{pmatrix},
+\end{equation*}
+with \(\beta_{0} = (11N_{C}-2n_{f})3 \), \(C_{F} = 4/3 \), and \(n_{f} \) is the number of active flavors.
 
 \clearpage
 \input{body/2_framework/EDM_figures.tex}
