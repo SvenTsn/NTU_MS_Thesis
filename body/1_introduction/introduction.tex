@@ -26,33 +26,56 @@ as well as the prospects for {\gthdm} under the new and improved experiments in 
 
 \section{The Standard Model of Particle Physics}
 The current working theory in the realm of particle physics is the Standard Model (SM). 
-[TO BE COMPLETED]
+The SM is a quantum field theory (QFT) that provides a unified framework for particles and their interactions.
+Particles are described as localized excitations of their coorresponding quantum fields,
+while their interactions (``forces'') manifest from local gauge symmetries of said fields.
+In this section we first give a brief historical rundown of how the SM developed into the form it has today,
+then we provide a top-down description of the important parts of the mathematical and physical framework.
 
 \subsection{Brief History}
-1928 Dirac equation.
-1954 Yang and Mills non-Abelian gauge theory.
-1957 Yang, Lee, Wu P-violation in the weak interaction.
-1961 Glashow combined the electromagnetic and weak interactions.
-1964 Brout, Englert, Higgs mechanism for mass inspired by superconductivity.
-1964 Gell-Mann and Zweig quark model.
-1967 Glashow and Salam incorperated the BEH mechanism into Weinberg's electroweak theory.
-1968 ``Partons'' discovered at SLAC.
-1970 Glashow, Iliopoulos, Maiani GIM mechanism predicting the charm quark.
-1973 Z boson interaction discovered at CERN.
-1973 Gross and Wilczek and Politzer asymptotic freedom for non-Ableian gauge theories.
-1973 Kobayashi and Masakawa CP violation.
-1973-74 QCD formulated.
-1974 Charm quark discovered at SLAC and BNL.
-1976 Tau discovered at SLAC.
-1977 Bottom quark discovered at Fermilab.
-1979 Glashow, Salam, Weinberg Nobel Prize.
-1983 Physical W and Z bosons discovered.
-1995 Top quark discovered at Fermilab.
-2012 Higgs boson discovered at CERN.
-2013 Higgs and Englert Nobel Prize.
+The late 1920s up till the early 1980s was a booming period for modern physics.
+Multiple theoretical and experimental frontiers were advancing in their respective ways,
+while simultaneously influencing each other,
+eventually culminating in a unified theory with significant experimental verification.
 
-The name ``Standard Model'' was coined by Pais and Treiman in 1975,
-but Weinberg claims that he first used the term in 1973.
+[1925] Born, Heisenberg, Jordan~\cite{BornJordan1925Quantization, BornHeisenbergJordan1926Quantization} canonical quantization of the electromagnetic field (inspired by de Broglie~\cite{DeBroglie1925Quantization}).
+[1927] Dirac "The Quantum Theory of the Emission and Absorption of Radiation"~\cite{Dirac1927QED}.
+[1928] Dirac equation~\cite{Dirac1928DiracEquation}, (implied existence of antimatter).
+[1932] Positron discovered by Anderson~\cite{Anderson1933Positron}.
+[1934] Fermi theory of beta decay~\cite{Fermi1934BetaDecay}.
+[1936] Muon discovered by Anderson and Neddermeyer~\cite{AndersonNeddermeyer1936Muon} (confirmed by Street and Stevenson~\cite{StreetStevenson1937Muon} in 1937).
+[1940s-50s] Formalization of QED as U(1) gauge theory, renormalization~\cite{Tomonaga1946QED, Schwinger1948QED-1, Schwinger1948QED-2, Feynmann1949QED-1, Feynmann1949QED-2, Feynmann1950QED-3, Dyson1949QED-1, Dyson1949QED-2}.
+[1946] Identity of the muon as a heavier partner of the electron elucidated~\cite{ConversiPanciniPiccioni1947Muon} (``start of modern particle physics'' c.f. Alvarez\footnote{1968 Nobel Prize lecture}).
+[1954] Yang and Mills non-Abelian gauge theory~\cite{YanMills1954NonAbelianGaugeTheory}.
+[1957] Lee, Yang~\cite{LeeYang1956ParityViolation}, Wu~\cite{WuEtAl1957ParityViolation} P-violation in the weak interaction.
+[1961] Glashow combined the electromagnetic and weak interactions~\cite{Glashow1961Electroweak}.
+[1964] PRL symmetry breaking papers~\cite{BroutEnglert1964HiggsMechanism, Higgs1964HiggsMechanism, GHK1964HiggsMechanism} established the Higgs mechanism\footnote{
+  If one were to properly credit all the scientists, it should be called the 
+  Brout-Englert-Higgs-Guralnik-Hagen-Kibble mechanism, 
+  or perhaps the BEHGHK mechanism for short.} 
+for mass inspired by superconductivity (\cite{BCS1957Superconductivity} for the BCS theory of superconductivity, \cite{Anderson1963SSB, KleinLee1964SSB} for applying said framework to particle gauge theories).
+[1964] Gell-Mann~\cite{GellMann1964QuarkModel} and Zweig~\cite{Zweig1964QuarkModel} quark model.
+[1965] Tomonaga, Schwinger, Feynmann Nobel Prize for QED.
+[1967] Weinberg~\cite{Weinberg1967Electroweak} and Salam~\cite{Salam1968Electroweak} incorperated the Higgs mechanism into Glashow's electroweak theory.
+[1968] ``Partons'' discovered at SLAC~\cite{SLAC1969Partons-1, SLAC1969Partons-2}.
+[1970] Glashow, Iliopoulos, Maiani GIM mechanism~\cite{GIM1970GIMMechanism} predicting the charm quark (charm quark predicted earlier in 19 by Bjorken and Glashow~\cite{BjorkenGlashow1964CharmPrediction}).
+[1973] Z boson interaction discovered at CERN~\cite{CERN1973ZInteraction-1, CERN1973ZInteraction-2, CERN1973ZInteraction-3}.
+[1973] Gross and Wilczek~\cite{GrossWilczek1973AsymptoticFreedom} and Politzer~\cite{Politzer1973AsymptoticFreedom} asymptotic freedom for non-Abelian gauge theories,
+which solidified QCD as the theory of strong interactions in the few years that followed.
+[1973] Kobayashi and Masakawa~\cite{KobayashiMasakawa1973CKMMatrix} CP violation from Cabibbo~\cite{Cabibbo1963CabbiboMatrix}.
+[1974] Charm quark discovered at SLAC~\cite{SLACLBL1974CharmDiscovery}, BNL~\cite{BNLMIT1974CharmDiscovery}, and Friscati (ADONE)~\cite{Frascati1974CharmDiscovery}.
+1975-76 Tau discovered at SLAC~\cite{PerlSLAC1975TauEvidence-1, PerlSLAC1976TauEvidence-2, PerlSLAC1977TauDiscovery}.
+[1977] Bottom quark discovered at Fermilab~\cite{Fermilab1977BottomQuarkDiscovery}.
+[1979] Glashow, Salam, Weinberg Nobel Prize for complete electroweak theory.
+[1983] Physical W and Z bosons discovered~\cite{CERN1983WDiscovery-1, CERN1983WDiscovery-2, CERN1983ZDiscovery-1, CERN1983ZDiscovery-2}.
+[1995] Top quark discovered at Fermilab~\cite{Fermilab1995TopQuarkDiscovery-1,Fermilab1995TopQuarkDiscovery-2}.
+[2012] Higgs boson discovered at CERN~\cite{CMS2012HiggsDiscovery, ATLAS2012HiggsDiscovery}.
+[2013] Higgs and Englert Nobel Prize for Higgs mechanism.
+[2013-now] No significant experimental discovery. Theorists running around like headless chickens.
+
+As an interesting anecdote, the name ``Standard Model'' was coined by Pais and Treiman in their 1975 paper~\cite{PaisTreiman1975SMName}
+for the unified electroweak theory with four quarks,
+but Weinberg claims~\cite{WeinbergInterview2018} that he first used the term in 1973 during a talk in Aix-en-Provence in France.
 
 \subsection{Theoretical Overview}
 Lagrangian formalism, QFT.
